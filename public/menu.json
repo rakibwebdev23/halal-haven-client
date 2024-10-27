@@ -1,0 +1,538 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36eeaa",
+        "name": "Tmato Salad",
+        "recipe": "A vibrant tomato salad with fresh basil, red onion, and a tangy olive oil dressing. Ideal as a light, flavorful side for any meal!",
+        "image": "https://i.ibb.co.com/g9jvqJx/tomato-salad.jpg",
+        "category": "salad",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb9",
+        "name": "Pineapple Juice",
+        "recipe": "A refreshing, tropical drink packed with vitamin C, offering a sweet and tangy burst of flavor.",
+        "image": "https://i.ibb.co.com/wzXdKXk/pineapple-juice.jpg",
+        "category": "drinks",
+        "price": 15.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7c",
+        "name": "Escalope de Veau",
+        "recipe": "Roasted duck bread (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "https://i.ibb.co.com/2dmDHyz/breads-1867459-1920.jpg",
+        "category": "popular",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee88",
+        "name": "Pastry Cake",
+        "recipe": "A pastry cake is a delicate dessert made from flaky, buttery layers often filled with cream, fruit, or custard.",
+        "image": "https://i.ibb.co.com/ggvcTF8/pastry-shop-8145805-1920.jpg",
+        "category": "dessert",
+        "price": 12.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7a",
+        "name": "Roast Duck Breast",
+        "recipe": "Meat kebab consists of seasoned, grilled meat skewers, typically made from beef, lamb, or chicken.",
+        "image": "https://i.ibb.co.com/yF6gg5z/meat-1155132-1920.jpg",
+        "category": "popular",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8c",
+        "name": "Ice Cream Cone",
+        "recipe": "An ice cream cone is a delightful treat consisting of a crispy, cone-shaped wafer filled with creamy ice cream.",
+        "image": "https://i.ibb.co.com/VWXBSbj/ice-cream-2576622-1920.jpg",
+        "category": "dessert",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee94",
+        "name": "Slice of Heaven",
+        "recipe": "The Slice of Heaven Pizza features a thin, crispy crust topped with rich tomato sauce, melted mozzarella, fresh basil, and a drizzle of olive oil.",
+        "image": "https://i.ibb.co.com/F0p6zsS/thomas-tucker-MNtag-e-XMKw-unsplash.jpg",
+        "category": "pizza",
+        "price": 15.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9e",
+        "name": "Pepperoni Perfection",
+        "recipe": "Pepperoni Perfection is a classic pizza topped with zesty tomato sauce, generous layers of gooey mozzarella, and spicy pepperoni slices. ",
+        "image": "https://i.ibb.co.com/DGg8r1T/pizza-6156562-1920.jpg",
+        "category": "pizza",
+        "price": 15.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea6",
+        "name": "Chicken and Walnut Salad",
+        "recipe": "Chicken and walnut salad is a delightful dish that combines tender chicken breast with crunchy walnuts, mixed greens, and a tangy dressing.",
+        "image": "https://i.ibb.co.com/TTd7gy2/letuce-salad.jpg",
+        "category": "salad",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeaf",
+        "name": "Hearty Harvest Vegetable Soup",
+        "recipe": "Hearty Harvest Vegetable Soup combines sautéed onions, carrots, and celery with a variety of fresh vegetables simmered in vegetable broth and seasoned with herbs.",
+        "image": "https://i.ibb.co.com/MsZ7s3p/ai-generated-8714538-1920.jpg",
+        "category": "soup",
+        "price": 12.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee89",
+        "name": "Vanilla Bean Bliss",
+        "recipe": "Vanilla Bean Bliss is a creamy dessert made with rich vanilla bean custard, whipped to perfection and served chilled.",
+        "image": "https://i.ibb.co.com/DfmPXSb/chocolates-6873502-1920.jpg",
+        "category": "dessert",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8a",
+        "name": "Chocolate Dream Cake",
+        "recipe": "Chocolate Dream Cake is a decadent, moist chocolate sponge layered with rich chocolate ganache and creamy frosting.",
+        "image": "https://i.ibb.co.com/r0J7qkZ/chocolate-cake.jpg",
+        "category": "dessert",
+        "price": 12.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee96",
+        "name": "BBQ Chicken Delight",
+        "recipe": "BBQ Chicken Delight features tender, grilled chicken smothered in smoky barbecue sauce, topped with melted cheese and fresh herbs.",
+        "image": "https://i.ibb.co.com/vkKqwv9/pizza-6478478-1920.jpg",
+        "category": "pizza",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee81",
+        "name": "BBQ Chicken Delight",
+        "recipe": "BBQ Chicken Delight features tender, grilled chicken smothered in smoky barbecue sauce, topped with melted cheese and fresh herbs.",
+        "image": "https://i.ibb.co.com/vkKqwv9/pizza-6478478-1920.jpg",
+        "category": "offered",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee84",
+        "name": "Caramel Pecan Tart",
+        "recipe": "Caramel Pecan Tart is a buttery, flaky crust filled with a luscious caramel filling and topped with crunchy toasted pecans.",
+        "image": "https://i.ibb.co.com/c6Nzg4x/icecream.jpg",
+        "category": "dessert",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea4",
+        "name": "Crispy Autumn Harvest Salad",
+        "recipe": "Crispy Autumn Harvest Salad combines mixed greens with roasted squash, crunchy apples, and toasted nuts, drizzled with a tangy vinaigrette.",
+        "image": "https://i.ibb.co.com/gyWgngT/flat-lay-salad.jpg",
+        "category": "salad",
+        "price": 15.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea5",
+        "name": "Fish Parmentier",
+        "recipe": "Sautéed breaded veal escalope with watercress, lemon and veal jus.",
+        "image": "https://i.ibb.co.com/M9zThGq/chicken-salad.jpg",
+        "category": "salad",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee87",
+        "name": "Chocolate Dream Cake",
+        "recipe": "Chocolate Dream Cake is a decadent, moist chocolate sponge layered with rich chocolate ganache and creamy frosting. ",
+        "image": "https://i.ibb.co.com/RB7YqZC/cupcake-279523-1920.jpg",
+        "category": "dessert",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee83",
+        "name": "Caramel Pecan Tart",
+        "recipe": "Chocolate Dream Cake is a decadent, moist chocolate sponge layered with rich chocolate ganache and creamy frosting.",
+        "image": "https://i.ibb.co.com/c6Nzg4x/icecream.jpg",
+        "category": "offered",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7f",
+        "name": "Black Velvet Indulgence",
+        "recipe": "Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans.",
+        "image": "https://i.ibb.co.com/Qdrdkxs/mug-8235059-1920.jpg",
+        "category": "popular",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea8",
+        "name": "Tangy Citrus Spinach Salad",
+        "recipe": "Crispy Autumn Harvest Salad combines mixed greens with roasted squash, crunchy apples, and toasted nuts, drizzled with a tangy vinaigrette.",
+        "image": "https://i.ibb.co.com/k6K3sSV/mix-salad.jpg",
+        "category": "salad",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeba",
+        "name": "Refreshing Revive",
+        "recipe": "Blend together 2 cups of fresh cucumber, 1 cup of green apple, and the juice of 1 lime with a splash of water. ",
+        "image": "https://i.ibb.co.com/B2H4vZZ/orang-juice.jpg",
+        "category": "drinks",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee80",
+        "name": "Refreshing Revive",
+        "recipe": "Blend together 2 cups of fresh cucumber, 1 cup of green apple, and the juice of 1 lime with a splash of water. ",
+        "image": "https://i.ibb.co.com/B2H4vZZ/orang-juice.jpg",
+        "category": "offered",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee90",
+        "name": "Vanilla Bean Panna Cotta",
+        "recipe": "Heat 1 cup of heavy cream with 1/2 cup of sugar and the seeds from 1 vanilla bean until dissolved.",
+        "image": "https://i.ibb.co.com/WFS8YFH/dessert.jpg",
+        "category": "dessert",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb0",
+        "name": "Potato Leek Soup",
+        "recipe": "Sauté 2 sliced leeks and 1 diced onion in 2 tablespoons of butter until soft, then add 4 peeled and diced potatoes and 4 cups of vegetable or chicken broth.",
+        "image": "https://i.ibb.co.com/Q9bFk3v/goulash-4014661-1920.jpg",
+        "category": "soup",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8d",
+        "name": "Peach Melba Trifle",
+        "recipe": "Layer cubed sponge cake with sliced peaches, raspberry sauce, and whipped cream in a glass dish, repeating the layers until filled.",
+        "image": "https://i.ibb.co.com/2trgLyZ/macarons-2897881-1920.jpg",
+        "category": "dessert",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8e",
+        "name": "Almond Joy Cookies",
+        "recipe": "Mix 1 cup of almond flour, 1/2 cup of shredded coconut, 1/4 cup of cocoa powder, 1/4 cup of honey.",
+        "image": "https://i.ibb.co.com/ggvcTF8/pastry-shop-8145805-1920.jpg",
+        "category": "dessert",
+        "price": 12.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea7",
+        "name": "Chicken Parmentier",
+        "recipe": "Sautéed breaded veal escalope with watercress, lemon and veal jus.",
+        "image": "https://i.ibb.co.com/TTd7gy2/letuce-salad.jpg",
+        "category": "salad",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee99",
+        "name": "Goats Cheese Pizza",
+        "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
+        "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2017/01/bbq-370x247.jpg",
+        "category": "pizza",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb3",
+        "name": "Buffalo Cauliflower Bliss",
+        "recipe": "Toss cauliflower florets in a mixture of olive oil, garlic powder, and buffalo sauce, then bake at 425°F (220°C) for 25-30 minutes until crispy.",
+        "image": "https://i.ibb.co.com/GvSX1KG/getulio-moraes-Wz3u9-Gtk-Wc-unsplash.jpg",
+        "category": "soup",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb5",
+        "name": "Fish Parmentier",
+        "recipe": "Sautéed breaded veal escalope with watercress, lemon and veal jus.",
+        "image": "https://i.ibb.co.com/Z8VrBR4/henry-perks-8ni7-LN6va-Q8-unsplash.jpg",
+        "category": "soup",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb6",
+        "name": "Mushroom Bisque",
+        "recipe": "Sauté 1 onion and 2 cups of sliced mushrooms in butter until tender, then add 3 cups of vegetable broth and simmer for 15 minutes.",
+        "image": "https://i.ibb.co.com/KX3gSqY/goulash-soup-3773134-1920.jpg",
+        "category": "soup",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb8",
+        "name": "Tortilla Soup",
+        "recipe": "Sauté 1 chopped onion, 2 minced garlic cloves, and 1 diced jalapeño in olive oil, then add 4 cups of chicken broth.",
+        "image": "https://i.ibb.co.com/4tD7N3n/goulash-6054124-1920.jpg",
+        "category": "soup",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee7e",
+        "name": "Tortilla Soup",
+        "recipe": "Sauté 1 chopped onion, 2 minced garlic cloves, and 1 diced jalapeño in olive oil, then add 4 cups of chicken broth",
+        "image": "https://i.ibb.co.com/4tD7N3n/goulash-6054124-1920.jpg",
+        "category": "popular",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8b",
+        "name": "Berry Bliss Parfait",
+        "recipe": "Layer Greek yogurt, a mix of fresh berries (like strawberries, blueberries, and raspberries), and granola in a glass or bowl. ",
+        "image": "https://i.ibb.co.com/z2tq151/dragon-juice.jpg",
+        "category": "dessert",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee8f",
+        "name": "Caramel Crunch Brownies",
+        "recipe": "Prepare a batch of brownies and pour half into a baking dish, then drizzle with caramel sauce.",
+        "image": "https://i.ibb.co.com/kB1qHFX/close-up-fancy-dessert.jpg",
+        "category": "dessert",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee91",
+        "name": "Lemon Zest Tart",
+        "recipe": "Make a crust with 1 cup of crushed graham crackers and 1/2 cup of melted butter, press it into a tart pan.",
+        "image": "https://i.ibb.co.com/4fSb94q/top-view-pancakes-with-fresh-fruits-chocolate-brown-wooden-floor.jpg",
+        "category": "dessert",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee97",
+        "name": "Mediterranean Medley Pizza",
+        "recipe": "Spread olive oil and garlic on a pizza crust, then top with a mix of sliced olives, artichokes, sun-dried tomatoes, feta cheese, and fresh spinach.",
+        "image": "https://i.ibb.co.com/dtPmHZk/delicious-pizza-indoors.jpg",
+        "category": "pizza",
+        "price": 16.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea0",
+        "name": "Spicy Veggie Supreme Pizza",
+        "recipe": "Spread marinara sauce on a pizza crust and top with a mix of bell peppers, red onions, jalapeños, mushrooms, and mozzarella cheese. ",
+        "image": "https://i.ibb.co.com/jJt6ggk/delicious-pizza-indoors-1.jpg",
+        "category": "pizza",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea9",
+        "name": "Mediterranean Quinoa Salad",
+        "recipe": "Combine cooked quinoa, diced cucumbers, cherry tomatoes, red onion, olives, and feta cheese in a bowl.",
+        "image": "https://i.ibb.co.com/9h14rm7/top-view-delicious-salad-table.jpg",
+        "category": "salad",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee85",
+        "name": "Chocolate Lava Cake",
+        "recipe": "Melt 1 cup of chocolate and 1/2 cup of butter, then mix in 1 cup of powdered sugar, 2 eggs, and 2 tablespoons of flour until smooth. ",
+        "image": "https://i.ibb.co.com/X5dsHMc/beautiful-delicious-dessert-concept.jpg",
+        "category": "dessert",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee93",
+        "name": "Pesto Chicken Primavera Pizza",
+        "recipe": "Spread basil pesto on a pizza crust, then top with cooked chicken, cherry tomatoes, bell peppers, and mozzarella cheese.",
+        "image": "https://i.ibb.co.com/gWmWLL5/close-up-melted-cheese-pizza.jpg",
+        "category": "pizza",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee95",
+        "name": "Four Cheese Fantasy Pizza",
+        "recipe": "Spread a layer of marinara sauce on a pizza crust, then top with mozzarella, cheddar, gorgonzola, and parmesan cheeses.",
+        "image": "https://i.ibb.co.com/Xp1XRYj/italian-cuisine-6903774-1920.jpg",
+        "category": "pizza",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9b",
+        "name": "Goats Cheese Pizza",
+        "recipe": "Spread a layer of marinara sauce on a pizza crust, then top with mozzarella, cheddar, gorgonzola, and parmesan cheeses.",
+        "image": "https://i.ibb.co.com/nsMTC7P/pizza-3525673-1920.jpg",
+        "category": "pizza",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb7",
+        "name": "Creamy Broccoli Cheddar Soup",
+        "recipe": "Sauté 1 chopped onion and 2 cloves of garlic in butter, then add 4 cups of chopped broccoli and 4 cups of vegetable broth, simmering until the broccoli is tender.",
+        "image": "https://i.ibb.co.com/3pQRhkm/pumpkin-soup-3645375-1920.jpg",
+        "category": "soup",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9c",
+        "name": "Veggie Delight Pizza",
+        "recipe": "Spread marinara sauce on a pizza crust and top with a mix of fresh vegetables like bell peppers, mushrooms, red onions, and spinach, along with mozzarella cheese.",
+        "image": "https://i.ibb.co.com/vkKqwv9/pizza-6478478-1920.jpg",
+        "category": "pizza",
+        "price": 15.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9d",
+        "name": "Caprese Pizza",
+        "recipe": "This pizza features fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze, capturing the flavors of a classic Caprese salad.",
+        "image": "https://i.ibb.co.com/gWmWLL5/close-up-melted-cheese-pizza.jpg",
+        "category": "pizza",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeac",
+        "name": "Refreshing Cucumber Salad",
+        "recipe": "Slice cucumbers and red onions, then toss them with fresh dill, lemon juice, olive oil, salt, and pepper. Chill for 15 minutes before serving for a crisp, refreshing side dish.",
+        "image": "https://i.ibb.co.com/RYwLF6y/cucumber-salad.jpg",
+        "category": "salad",
+        "price": 17.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb4",
+        "name": "Tuscan White Bean Soup",
+        "recipe": "Sauté 1 chopped onion, 2 cloves of garlic, and 2 carrots in olive oil until soft, then add 4 cups of vegetable broth, 2 cans of drained white beans, and chopped kale.",
+        "image": "https://i.ibb.co.com/XJxzJTs/tomato-soup-2288056-1920.jpg",
+        "category": "soup",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee98",
+        "name": "Greek Pizza",
+        "recipe": "This pizza is topped with feta cheese, olives, artichokes, spinach, and a drizzle of olive oil, offering a Mediterranean twist on a classic favorite.",
+        "image": "https://i.ibb.co.com/qdvYt4L/pizza-329523-1920-1.jpg",
+        "category": "pizza",
+        "price": 14.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee82",
+        "name": "Greek Pizza",
+        "recipe": "This pizza is topped with feta cheese, olives, artichokes, spinach, and a drizzle of olive oil, offering a Mediterranean twist on a classic favorite.",
+        "image": "https://i.ibb.co.com/qdvYt4L/pizza-329523-1920-1.jpg",
+        "category": "offered",
+        "price": 12.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee86",
+        "name": "Carrot Cake",
+        "recipe": "A moist and spiced cake made with grated carrots, walnuts, and a cream cheese frosting, often topped with pecans for added flavor and texture.",
+        "image": "https://i.ibb.co.com/SyQ33R6/view-delicious-dessert.jpg",
+        "category": "dessert",
+        "price": 12.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee9a",
+        "name": "Spicy BBQ Pulled Pork Pizza",
+        "recipe": "Topped with tender pulled pork, BBQ sauce, jalapeños, and a blend of mozzarella and cheddar cheese for a smoky, spicy kick.",
+        "image": "https://i.ibb.co.com/s5bVTyY/wesual-click-jk-C1ul95uj-Q-unsplash.jpg",
+        "category": "popular",
+        "price": 12.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeab",
+        "name": "Garlic Spinach Ricotta Pizza",
+        "recipe": "This pizza is topped with a creamy mixture of ricotta cheese, sautéed spinach, garlic, and mozzarella, creating a deliciously savory and cheesy bite.",
+        "image": "https://i.ibb.co.com/HCgDbxV/food-and-drink-industry-7279413-1920.jpg",
+        "category": "popular",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeb1",
+        "name": "Creamy Pumpkin Soup",
+        "recipe": "Sauté 1 onion and 2 cloves of garlic in olive oil, then add 4 cups of pumpkin puree, 3 cups of vegetable broth, and a pinch of nutmeg.",
+        "image": "https://i.ibb.co.com/xCvrHC1/pumpkin-soup-2972858-1920.jpg",
+        "category": "soup",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eead",
+        "name": "Golden Turmeric Lentil Soup",
+        "recipe": "This vibrant yellow soup is made with red lentils, coconut milk, and a blend of turmeric, ginger, and cumin, offering a warm and nourishing flavor with anti-inflammatory benefits.",
+        "image": "https://i.ibb.co.com/N7JYkbP/soup-2006317-1920.jpg",
+        "category": "soup",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeae",
+        "name": "Tom Yum Soup",
+        "recipe": "A classic Thai soup with a spicy and sour broth, made with lemongrass, lime leaves, galangal, and chili, featuring shrimp or chicken, mushrooms, and a touch of fresh lime juice.",
+        "image": "https://i.ibb.co.com/KX3gSqY/goulash-soup-3773134-1920.jpg",
+        "category": "soup",
+        "price": 10.5
+    },
+    {
+        "_id": "607d1c3e9f1b2c001f4e0e63",
+        "name": "Classic Cheeseburger",
+        "recipe": "Grill a beef patty and place it on a toasted bun with a slice of cheddar cheese. Top with lettuce, tomato, pickles, and your favorite condiments.",
+        "image": "https://i.ibb.co.com/VqnB7R8/mike-Px-J9zk-M2wd-A-unsplash.jpg",
+        "category": "burger",
+        "price": 12.5
+    },
+    {
+        "_id": "607d1c3e9f1b2c001f4e0e64",
+        "name": "BBQ Bacon Burger",
+        "recipe": "Cook a beef patty and layer with crispy bacon and BBQ sauce on a bun. Add onion rings and cheddar cheese for a smoky flavor.",
+        "image": "https://i.ibb.co.com/BqwvNQ6/sk-CK6tj-AIMJWM-unsplash.jpg",
+        "category": "burger",
+        "price": 15.5
+    },
+    {
+        "_id": "607d1c3e9f1b2c001f4e0e65",
+        "name": "Spicy Jalapeño Burger",
+        "recipe": "Season a beef patty with spices, then grill it and top with jalapeños and pepper jack cheese. Serve on a bun with lettuce and spicy mayo.",
+        "image": "https://i.ibb.co.com/5Ggrtd7/amirali-mirhashemian-jh5-Xy-K4-Rr3-Y-unsplash.jpg",
+        "category": "burger",
+        "price": 13.5
+    },
+    {
+        "_id": "607d1c3e9f1b2c001f4e0e66",
+        "name": " Mushroom Swiss Burger",
+        "recipe": "Sauté sliced mushrooms in butter, then place them on a grilled beef patty with Swiss cheese. Serve on a bun with garlic aioli.",
+        "image": "https://i.ibb.co.com/8c8yRWP/fast-food-6813786-1920.jpg",
+        "category": "burger",
+        "price": 15.5
+    },
+    {
+        "_id": "607d1c3e9f1b2c001f4e0e67",
+        "name": "Mediterranean Lamb Burger",
+        "recipe": "Mix ground lamb with garlic, cumin, and mint, then shape into patties and grill. Serve on a pita with tzatziki sauce, cucumber, and tomato.",
+        "image": "https://i.ibb.co.com/YXzZrF3/burger-7221436-1920.jpg",
+        "category": "burger",
+        "price": 17.9
+    },
+    {
+        "_id": "607d1c3e9f1b2c001f4e0e68",
+        "name": "Caprese Chicken Burger",
+        "recipe": "Grill a chicken breast and top with fresh mozzarella, basil, and tomato slices. Drizzle with balsamic glaze and serve on a ciabatta bun.",
+        "image": "https://i.ibb.co.com/tPDdjKH/burger-6172003-1920.jpg",
+        "category": "burger",
+        "price": 12.9
+    },
+    {
+        "_id": "607d1c3e9f1b2c001f4e0e69",
+        "name": "Cucumber Mint Water",
+        "recipe": "Infuse water with sliced cucumber, fresh mint leaves, and a squeeze of lemon. Chill for a few hours before serving over ice.",
+        "image": "https://i.ibb.co.com/mvbtHDC/mint-juice.jpg",
+        "category": "drinks",
+        "price": 10.5
+    }, 
+    {
+        "_id": "607d1c3e9f1b2c001f4e0e70",
+        "name": "Classic Lemonade",
+        "recipe": "Mix freshly squeezed lemon juice, water, and sugar in a pitcher, stirring until the sugar dissolves. Serve over ice and garnish with lemon slices.",
+        "image": "https://i.ibb.co.com/1nN6Zyr/lemon-juice.jpg",
+        "category": "drinks",
+        "price": 14.7
+    },
+    {
+        "_id": "607d1c3e9f1b2c001f4e0e71",
+        "name": "Carrot Juice",
+        "recipe": "Juice fresh carrots using a juicer, then mix in a splash of lemon juice and a touch of honey for sweetness. Serve chilled over ice for a refreshing and nutritious drink.",
+        "image": "https://i.ibb.co.com/wNszbj1/carrot-juice-1623079-1920.jpg",
+        "category": "drinks",
+        "price": 17.5
+    },
+    {
+        "_id": "607d1c3e9f1b2c001f4e0e72",
+        "name": "Sugarcane Mojito",
+        "recipe": "Muddle fresh mint leaves and lime in a glass, add sugarcane juice, and top with sparkling water. Serve over ice with a mint sprig for garnish.",
+        "image": "https://i.ibb.co.com/Z13gYTJ/sugarcane-5388628-1920.jpg",
+        "category": "drinks",
+        "price": 10.9
+    }
+]
