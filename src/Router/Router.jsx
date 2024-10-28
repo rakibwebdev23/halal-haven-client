@@ -12,7 +12,8 @@ import MenuSoup from "../pages/Menu/MenuSoup/MenuSoup";
 import MenuSalad from "../pages/Menu/MenuSalad/MenuSalad";
 import MenuDrink from "../pages/Menu/MenuDrink/MenuDrink";
 import Order from "../pages/Order/Order/Order";
-// import MenuPopular from "../Menu/MenuPopular/MenuPopular";
+import SignUp from "../pages/UsersSocialSign/SignUp/SignUp";
+import SignIn from "../pages/UsersSocialSign/SignIn/SignIn";
 
 export const router = createBrowserRouter([
     {
@@ -63,7 +64,14 @@ export const router = createBrowserRouter([
                 path: "order",
                 element: <Order></Order>,
             },
-
+            {
+                path: "signup",
+                element: <SignUp></SignUp>
+            },
+            {
+                path: "signin",
+                element: <SignIn></SignIn>
+            }
         ]
     }
 ]);

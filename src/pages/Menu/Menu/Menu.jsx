@@ -1,4 +1,4 @@
-import HelmetShare from "../../../component/HelmetUse/HelmetShare";
+import HelmetShare from "../../../component/HelmetShare/HelmetShare";
 import MenuCart from "../../../component/MenuCart/MenuCart";
 
 const Menu = ({ items }) => {

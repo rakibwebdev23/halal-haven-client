@@ -1,4 +1,4 @@
-import HelmetShare from "../../../component/HelmetUse/HelmetShare";
+import HelmetShare from "../../../component/HelmetShare/HelmetShare";
 import Testmonial from "../../Testmonial/Testmonial";
 import About from "../About/About";
 import Banner from "../Banner/banner";

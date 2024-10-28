@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo/logos.png";
+import useAuth from "../../../hooks/useAuth";
 
 const Navbar = () => {
-
+    const { user, logOut } = useAuth();
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error)
+            )
+    }
     return (
         <div className="navbar fixed z-10 max-w-screen-xl text-white bg-black bg-opacity-30">
             <div className="navbar-start">
@@ -71,7 +78,16 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link className="">Sign In</Link>
+                {
+                    user ? <>
+                        <Link onClick={handleLogOut} className="">Sign Out</Link>
+                        {user.photoURL !== null && <div className="avatar ml-6">
+                            <div className="w-12">
+                                <img className="rounded-full" src={user.photoURL} />
+                            </div>
+                        </div>}
+                    </> : <Link to="/signin">Sign In</Link>
+                }
             </div>
         </div>
     );

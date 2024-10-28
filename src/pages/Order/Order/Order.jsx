@@ -5,7 +5,7 @@ import OrderFood from "../OrderFood/OrderFood";
 import img from "../../../assets/cover/cover2.jpg";
 import { Link } from "react-router-dom";
 import SectionTitle from "../../../component/SectionTitle/SectionTitle";
-import HelmetShare from "../../../component/HelmetUse/HelmetShare";
+import HelmetShare from "../../../component/HelmetShare/HelmetShare";
 
 const Order = () => {
     const [, offeredItem, popularItem, pizzaItem, burgerItem, dessertItem, soupItem, saladItem, drinkItem] = MenuData();
