@@ -1,6 +1,7 @@
 import FoodCart from "../../../component/FoodCart/FoodCart";
 
-const OrderFood = ({items}) => {
+const OrderFood = ({ items }) => {
+
     return (
         <div>
             <div className="md:grid grid-cols-3 gap-4">

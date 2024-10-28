@@ -5,11 +5,13 @@ import OrderFood from "../OrderFood/OrderFood";
 import img from "../../../assets/cover/cover2.jpg";
 import { Link } from "react-router-dom";
 import SectionTitle from "../../../component/SectionTitle/SectionTitle";
+import HelmetShare from "../../../component/HelmetUse/HelmetShare";
 
 const Order = () => {
     const [, offeredItem, popularItem, pizzaItem, burgerItem, dessertItem, soupItem, saladItem, drinkItem] = MenuData();
     return (
-        <div className="">
+        <div>
+            <HelmetShare caption="Order"></HelmetShare>
             <div
                 className="hero h-[500px]"
                 style={{
@@ -32,7 +34,7 @@ const Order = () => {
             </div>
             <div className="flex">
                 <Tabs className="flex w-full mt-20">
-                    <TabList className="flex flex-col w-1/4 space-y-2 font-bold uppercase border-t-2 border-orange-500">
+                    <TabList className="flex flex-col w-1/4 space-y-2 font-bold uppercase">
                         <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Offered Food</Tab>
                         <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Popular Food</Tab>
                         <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Pizza</Tab>

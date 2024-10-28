@@ -61,8 +61,9 @@ export const router = createBrowserRouter([
             // food order related
             {
                 path: "order",
-                element: <Order></Order>
-            }
+                element: <Order></Order>,
+            },
+
         ]
     }
 ]);
