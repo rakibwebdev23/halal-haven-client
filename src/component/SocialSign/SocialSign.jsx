@@ -1,9 +1,34 @@
 import { FaGoogle } from "react-icons/fa";
+import useAuth from "../../hooks/useAuth";
+import { useNavigate } from "react-router-dom";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const SocialSign = () => {
+    const { googleSignUser } = useAuth();
+    const navigate = useNavigate();
+    const axiosPublic = useAxiosPublic();
+
     const handleGoogleSignUser = () => {
-        console.log("google sign");  
-    }
+        googleSignUser()
+            .then(result => {
+                const userInfo = {
+                    name: result.user?.displayName,
+                    email: result.user?.email
+                }
+                                
+                axiosPublic.post('/users', userInfo)
+                    .then(res => {
+                        console.log(res.data);
+                        
+                        if (res.data) {
+                        navigate('/')
+                    }
+                })
+            })
+            .catch(error => console.log(error)
+            )
+    };
+
     return (
         <div>
             <div className="text-center mt-2 w-full">

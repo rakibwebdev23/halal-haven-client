@@ -25,7 +25,7 @@ const MenuPopular = () => {
             </div>
             <Menu items={popularItem}></Menu>
             <MenuOrder
-            menuImg={imgBack}
+                menuImg={imgBack}
             ></MenuOrder>
         </div>
     );

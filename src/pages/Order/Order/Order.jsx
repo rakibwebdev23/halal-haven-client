@@ -6,9 +6,11 @@ import img from "../../../assets/cover/cover2.jpg";
 import { Link } from "react-router-dom";
 import SectionTitle from "../../../component/SectionTitle/SectionTitle";
 import HelmetShare from "../../../component/HelmetShare/HelmetShare";
+import useAuth from "../../../hooks/useAuth";
 
 const Order = () => {
     const [, offeredItem, popularItem, pizzaItem, burgerItem, dessertItem, soupItem, saladItem, drinkItem] = MenuData();
+    const { user } = useAuth();
     return (
         <div>
             <HelmetShare caption="Order"></HelmetShare>
@@ -22,7 +24,9 @@ const Order = () => {
                     <div className="max-w-md text-xl font-bold">
                         <Link className="mr-2 text-orange-500 hover:underline" to="/">Home</Link>
                         <span className="text-2xl">/</span>
-                        <Link className="ml-2 text-green-500 hover:underline">Dashboard</Link>
+                        {
+                            user && <Link className="ml-2 text-green-500 hover:underline">Dashboard</Link>
+                        }
                     </div>
                 </div>
             </div>
@@ -34,15 +38,15 @@ const Order = () => {
             </div>
             <div className="flex">
                 <Tabs className="flex w-full mt-20">
-                    <TabList className="flex flex-col w-1/4 space-y-2 font-bold uppercase">
-                        <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Offered Food</Tab>
-                        <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Popular Food</Tab>
-                        <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Pizza</Tab>
-                        <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Burger</Tab>
-                        <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Dessert</Tab>
-                        <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Soup</Tab>
-                        <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Salad</Tab>
-                        <Tab className="p-4 bg-orange-300 hover:bg-gray-200 cursor-pointer rounded">Drinks</Tab>
+                    <TabList className="flex flex-col w-1/4 space-y-2 font-bold uppercase text-white">
+                        <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Offered Food</Tab>
+                        <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Popular Food</Tab>
+                        <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Pizza</Tab>
+                        <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Burger</Tab>
+                        <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Dessert</Tab>
+                        <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Soup</Tab>
+                        <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Salad</Tab>
+                        <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Drinks</Tab>
                     </TabList>
 
                     <div className="w-3/4 p-4 ml-4 border-l border-gray-200">

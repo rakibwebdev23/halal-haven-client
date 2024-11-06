@@ -8,18 +8,21 @@ import img5 from "../../../assets/banner/banner5.jpg";
 import img6 from "../../../assets/banner/banner6.jpg";
 import imgBack from "../../../assets/images/bannerBack.jpg";
 import bannerUp from "../../../assets/images/imgRight.png";
-import { FaFirefoxBrowser } from "react-icons/fa";
+import { FaFirefoxBrowser, FaLocationArrow } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "../Banner/Banner.css";
+import { FaLocationCrosshairs, FaLocationDot } from "react-icons/fa6";
+import { BsTelephone } from "react-icons/bs";
 
 const Banner = () => {
 
     return (
         <div>
             <Carousel>
-                <div className="min-h-[100%] md:flex mx-auto" style={{ backgroundImage: `url("${imgBack}")` }}>
+                <div className="min-h-[100%] md:flex mx-auto delay-500 duration-500" style={{ backgroundImage: `url("${imgBack}")` }}>
                     <div className="md:flex justify-between items-center gap-6 bg-black bg-opacity-60">
                         <div className="w-1/2 text-left text-white pl-6 space-y-6">
-                            <div className="text-6xl font-bold">
+                            <div className="text-6xl font-bold fade-in">
                                 <h2>Welcome to</h2>
                                 <h2 className="text-orange-500 mt-4">Halal Haven</h2>
                             </div>
@@ -32,17 +35,17 @@ const Banner = () => {
                                 </Link>
                             </div>
                             <div className="md:flex justify-between pt-2 text-slate-400">
-                                <p className="">+ 01307236959</p>
-                                <p className="flex items-center gap-3"><FaFirefoxBrowser></FaFirefoxBrowser>
+                                <p className="flex items-center gap-2"><BsTelephone className="font-bold text-lg"></BsTelephone> +01307236959</p>
+                                <p className="flex items-center gap-3"><FaFirefoxBrowser className="text-red-500 text-lg" ></FaFirefoxBrowser>
                                     www.halalhaven.com
                                 </p>
-                                <p>
-                                    Location: Dhaka, Bangladesh
+                                <p className="flex items-center gap-2">
+                                    <FaLocationDot className="text-lg font-bold text-orange-600"></FaLocationDot> Dhaka, Bangladesh
                                 </p>
                             </div>
                         </div>
                         <div className="w-1/2 p-10">
-                            <img className="rounded-full min-h-full w-full" src={bannerUp} alt="" />
+                            <img className="fade-in rounded-full min-h-full w-full" src={bannerUp} alt="" />
                         </div>
                     </div>
                 </div>
@@ -50,16 +53,16 @@ const Banner = () => {
                 <div className="min-h-[100%]">
                     <img src={img1} />
                 </div>
-                <div>
+                <div className="min-h-[100%]">
                     <img src={img3} />
                 </div>
-                <div>
+                <div className="min-h-[100%]">
                     <img src={img4} />
                 </div>
-                <div>
+                <div className="min-h-[100%]">
                     <img src={img5} />
                 </div>
-                <div>
+                <div className="min-h-[100%]">
                     <img src={img6} />
                 </div>
             </Carousel>

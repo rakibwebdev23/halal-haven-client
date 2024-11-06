@@ -1,55 +1,61 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialSign from "../../../component/SocialSign/SocialSign";
 import img from "../../../assets/images/bannerBack.jpg";
 import HelmetShare from "../../../component/HelmetShare/HelmetShare";
 import { useForm } from "react-hook-form";
 import useAuth from "../../../hooks/useAuth";
 import Swal from "sweetalert2";
+import useAxiosPublic from "../../../hooks/useAxiosPublic";
 
 const SignUp = () => {
     const { createUser, logOut, updateUserProfile } = useAuth();
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const navigate = useNavigate();
-    const location = useLocation();
-    const from = location.state?.from?.pathname || "/";
+    const axiosPublic = useAxiosPublic();
 
     const onSubmit = data => {
         createUser(data.email, data.password)
             .then(result => {
                 const loggedUser = result.user;
-                console.log(loggedUser);
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
                         const userInfo = {
                             name: loggedUser.displayName,
                             email: loggedUser.email
                         }
-                        console.log(userInfo);
-                        reset();
-                        Swal.fire({
-                            title: `${loggedUser.email} Sign Up Successfully`,
-                            showClass: {
-                                popup: `
-                        animate__animated
-                        animate__fadeInUp
-                        animate__faster
-                      `
-                            },
-                            hideClass: {
-                                popup: `
-                        animate__animated
-                        animate__fadeOutDown
-                        animate__faster
-                      `
-                            }
-                        });
 
-                        logOut()
-                            .then(() => {
-                                navigate(from, { replace: true });
+                        axiosPublic.post('/users', userInfo)
+                            .then(res => {
+                                if (res.data.insertedId) {
+                                    console.log(res.data);
+                                    reset();
+                                    Swal.fire({
+                                        title: `${loggedUser.email} Sign Up Successfully`,
+                                        showClass: {
+                                            popup: `
+                                animate__animated
+                                animate__fadeInUp
+                                animate__faster
+                              `
+                                        },
+                                        hideClass: {
+                                            popup: `
+                                animate__animated
+                                animate__fadeOutDown
+                                animate__faster
+                              `
+                                        }
+                                    });
+
+                                    logOut()
+                                        .then(() => {
+                                            navigate("/");
+                                        })
+                                        .catch(error => console.log(error)
+                                        )
+                                }
                             })
-                            .catch(error => console.log(error)
-                            )
+
                     })
                     .catch(error => console.log(error)
                     )

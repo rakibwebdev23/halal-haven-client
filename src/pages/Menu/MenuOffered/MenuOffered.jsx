@@ -25,7 +25,7 @@ const MenuOffered = () => {
             </div>
             <Menu items={offeredItem}></Menu>
             <MenuOrder
-            menuImg={imgBack}
+                menuImg={imgBack}
             ></MenuOrder>
         </div>
     );

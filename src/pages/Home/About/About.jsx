@@ -8,7 +8,7 @@ const About = () => {
     return (
         <div className="md:flex justify-between my-28 text-justify">
             <div className="w-1/2">
-                <img className="" src={img1} alt="" />
+                <img className="fade-in" src={img1} alt="" />
 
             </div>
             <div className="w-1/2 space-y-4">

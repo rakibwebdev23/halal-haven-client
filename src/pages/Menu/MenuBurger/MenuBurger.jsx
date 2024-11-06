@@ -24,6 +24,7 @@ const MenuBurger = () => {
                 ></SectionTitle>
             </div>
             <Menu items={burgerItem}></Menu>
+
             <MenuOrder
                 menuImg={imgBack}
             ></MenuOrder>

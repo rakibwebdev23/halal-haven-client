@@ -1,15 +1,20 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo/logos.png";
 import useAuth from "../../../hooks/useAuth";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import useCart from "../../../hooks/useCart";
 
 const Navbar = () => {
     const { user, logOut } = useAuth();
+    const [cart] = useCart();
+    
     const handleLogOut = () => {
         logOut()
             .then(() => { })
             .catch(error => console.log(error)
             )
     }
+
     return (
         <div className="navbar fixed z-10 max-w-screen-xl text-white bg-black bg-opacity-30">
             <div className="navbar-start">
@@ -48,6 +53,12 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li><Link to="/order">Order</Link></li>
+                        <li><Link to="/dashboard/cart">
+                            <button className="flex items-center gap-2">
+                                <MdOutlineShoppingCart className="text-2xl font-bold text-orange-600"></MdOutlineShoppingCart>
+                                <div className="badge bg-orange-600 border-none text-white font-bold p-2">{ cart.length}</div>
+                            </button>
+                        </Link></li>
                     </ul>
                 </div>
                 <Link className="flex items-center gap-2" to="/">
@@ -75,6 +86,12 @@ const Navbar = () => {
                         </details>
                     </li>
                     <li><Link to="/order">Order</Link></li>
+                    <li><Link to="/dashboard/cart">
+                        <button className="flex items-center gap-1">
+                            <MdOutlineShoppingCart className="text-2xl font-bold text-orange-600"></MdOutlineShoppingCart>
+                            <div className="badge bg-orange-600 border-none text-white font-bold p-2">{ cart.length}</div>
+                        </button>
+                    </Link></li>
                 </ul>
             </div>
             <div className="navbar-end">
@@ -84,6 +101,7 @@ const Navbar = () => {
                         {user.photoURL !== null && <div className="avatar ml-6">
                             <div className="w-12">
                                 <img className="rounded-full" src={user.photoURL} />
+                                
                             </div>
                         </div>}
                     </> : <Link to="/signin">Sign In</Link>

@@ -14,6 +14,9 @@ import MenuDrink from "../pages/Menu/MenuDrink/MenuDrink";
 import Order from "../pages/Order/Order/Order";
 import SignUp from "../pages/UsersSocialSign/SignUp/SignUp";
 import SignIn from "../pages/UsersSocialSign/SignIn/SignIn";
+import Dashboard from "../Layout/Dashboard";
+import Cart from "../pages/Dashboard/Cart/Cart";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -71,6 +74,16 @@ export const router = createBrowserRouter([
             {
                 path: "signin",
                 element: <SignIn></SignIn>
+            }
+        ]
+    },
+    {
+        path: "dashboard",
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute> ,
+        children: [
+            {
+                path: "cart",
+                element: <Cart></Cart>
             }
         ]
     }

@@ -18,12 +18,10 @@ const SignIn = () => {
         const password = data.password;
         signInUser(email, password)
             .then(result => {
-                const user = result.user;
-                console.log(user.displayName);
-                
+                const user = result.user;  
                 reset();
                 Swal.fire({
-                    title: `${user.displayName} Sign In successfully`,
+                    title: `${user.email} Sign In successfully`,
                     showClass: {
                         popup: `
                         animate__animated
