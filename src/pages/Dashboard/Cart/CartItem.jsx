@@ -4,11 +4,12 @@ import Swal from "sweetalert2";
 import useCart from "../../../hooks/useCart";
 
 const CartItem = ({ item, index }) => {
-    const { _id, name, image, price } = item;
+
+    const { _id,name, image, price } = item;    
     const axiosSecure = useAxiosSecure();
     const [, refetch] = useCart();
 
-    const handleDeleteCart = (id) => {
+    const handleDelete = item => {
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -19,17 +20,19 @@ const CartItem = ({ item, index }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                axiosSecure.delete(`/carts/${id}`)
+                axiosSecure.delete(`/carts/${_id}`)
                     .then(res => {
+                        console.log(res.data);
+                        
+                        // console.log(res.data);
                         if (res.data.deletedCount > 0) {
-                            refetch();
                             Swal.fire({
                                 title: "Deleted!",
                                 text: "Your file has been deleted.",
                                 icon: "success"
                             });
+                            refetch();
                         }
-
                     })
             }
         });
@@ -55,7 +58,7 @@ const CartItem = ({ item, index }) => {
             </td>
             <td className="font-bold"><span className="text-orange-600">$</span> {price}</td>
             <td>
-                <button onClick={() => handleDeleteCart(_id)} className="btn btn-ghost btn-lg text-red-600 font-bold"><RiDeleteBin6Line></RiDeleteBin6Line></button>
+                <button onClick={() => handleDelete(item)} className="btn btn-ghost btn-lg text-red-600 font-bold"><RiDeleteBin6Line></RiDeleteBin6Line></button>
             </td>
         </tr>
     );

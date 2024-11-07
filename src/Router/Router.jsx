@@ -1,6 +1,4 @@
-import {
-    createBrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../pages/Home/Home/Home";
 import MenuOffered from "../pages/Menu/MenuOffered/MenuOffered";
@@ -17,6 +15,16 @@ import SignIn from "../pages/UsersSocialSign/SignIn/SignIn";
 import Dashboard from "../Layout/Dashboard";
 import Cart from "../pages/Dashboard/Cart/Cart";
 import PrivateRoute from "./PrivateRoute";
+import UserHome from "../pages/Dashboard/Users/UserHome/UserHome";
+import Reservation from "../pages/Dashboard/Users/Reservation/Reservation";
+import Bookings from "../pages/Dashboard/Users/Bookings/Bookings";
+import PaymentHistory from "../pages/Dashboard/Users/PaymentHistory/PaymentHistory";
+import Review from "../pages/Dashboard/Users/Review/Review";
+import AdminHome from "../pages/Dashboard/Admin/AdminHome/AdminHome";
+import AddItems from "../pages/Dashboard/Admin/AddItems/AddItems";
+import ManageItems from "../pages/Dashboard/Admin/ManageItems/ManageItems";
+import ManageBookings from "../pages/Dashboard/Admin/ManageBookings/ManageBookings";
+import AllUsers from "../pages/Dashboard/Admin/AllUsers/AllUsers";
 
 export const router = createBrowserRouter([
     {
@@ -79,11 +87,55 @@ export const router = createBrowserRouter([
     },
     {
         path: "dashboard",
-        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute> ,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         children: [
+
+            // user related routes
+            {
+                path: "userHome",
+                element: <UserHome></UserHome>
+            },
+            {
+                path: "reservation",
+                element: <Reservation></Reservation>
+            },
             {
                 path: "cart",
                 element: <Cart></Cart>
+            },
+            {
+                path: "bookings",
+                element: <Bookings></Bookings>
+            },
+            {
+                path: "paymentHistory",
+                element: <PaymentHistory></PaymentHistory>
+            },
+            {
+                path: "review",
+                element: <Review></Review>
+            },
+
+            // admin related routes 
+            {
+                path: "adminHome",
+                element: <AdminHome></AdminHome>
+            },
+            {
+                path: "addItems",
+                element: <AddItems></AddItems>
+            },
+            {
+                path: "manageItems",
+                element: <ManageItems></ManageItems>
+            },
+            {
+                path: "manageBookings",
+                element: <ManageBookings></ManageBookings>
+            },
+            {
+                path: "allUsers",
+                element: <AllUsers></AllUsers>
             }
         ]
     }

@@ -17,9 +17,7 @@ const SocialSign = () => {
                 }
                                 
                 axiosPublic.post('/users', userInfo)
-                    .then(res => {
-                        console.log(res.data);
-                        
+                    .then(res => {                        
                         if (res.data) {
                         navigate('/')
                     }

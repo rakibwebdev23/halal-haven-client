@@ -27,7 +27,6 @@ const SignUp = () => {
                         axiosPublic.post('/users', userInfo)
                             .then(res => {
                                 if (res.data.insertedId) {
-                                    console.log(res.data);
                                     reset();
                                     Swal.fire({
                                         title: `${loggedUser.email} Sign Up Successfully`,
