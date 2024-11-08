@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { app } from "../../firebase.config";
 import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const auth = getAuth(app);
 export const AuthContext = createContext(null);
@@ -8,6 +9,7 @@ export const AuthContext = createContext(null);
 const AuthProviders = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState();
+    const axiosPublic = useAxiosPublic();
     const googleProvider = new GoogleAuthProvider();
 
     const createUser = (email, password) => {
@@ -36,6 +38,31 @@ const AuthProviders = ({ children }) => {
         return signOut(auth);
     }
 
+
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, currentUser => {
+            setUser(currentUser);
+            if (currentUser) {
+                const userInfo = {email: currentUser.email}
+                axiosPublic.post("/jwt", userInfo)
+                    .then(res => {
+                        // console.log(res.data.token);
+                        if (res.data.token) {
+                            localStorage.setItem('access-token', res.data.token)
+                        }
+                    });
+            }
+            else {
+                localStorage.removeItem('access-token')
+            }
+            setLoading(false);
+        });
+        return () => {
+            return unsubscribe();
+        };
+    }, [axiosPublic]);
+
     const authInfo = {
         user,
         loading,
@@ -45,24 +72,6 @@ const AuthProviders = ({ children }) => {
         googleSignUser,
         updateUserProfile
     }
-
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, currentUser => {
-            setUser(currentUser);
-            if (currentUser) {
-                setLoading(false);
-            }
-            else {
-                setLoading(false);
-            }
-            
-            
-
-        });
-        return () => {
-            return unsubscribe();
-        };
-    }, []);
 
     return (
         <AuthContext.Provider value={authInfo}>
