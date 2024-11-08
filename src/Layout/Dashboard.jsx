@@ -3,10 +3,11 @@ import { NavLink, Outlet } from "react-router-dom";
 import useCart from "../hooks/useCart";
 import { MdPayment, MdRateReview } from "react-icons/md";
 import { IoCartSharp } from "react-icons/io5";
+import useAdmin from "../hooks/useAdmin";
 
 const Dashboard = () => {
     const [cart] = useCart();
-    const isAdmin = true;
+    const [isAdmin] = useAdmin();
 
     return (
         <div className="flex">
