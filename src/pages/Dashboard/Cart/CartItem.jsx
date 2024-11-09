@@ -5,11 +5,11 @@ import useCart from "../../../hooks/useCart";
 
 const CartItem = ({ item, index }) => {
 
-    const { _id,name, image, price } = item;    
+    const { _id, name, image, price } = item;
     const axiosSecure = useAxiosSecure();
     const [, refetch] = useCart();
 
-    const handleDelete = item => {
+    const handleDelete = id => {
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -18,22 +18,19 @@ const CartItem = ({ item, index }) => {
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes, delete it!"
-        }).then((result) => {
+        }).then( async (result) => {
             if (result.isConfirmed) {
-                axiosSecure.delete(`/carts/${_id}`)
-                    .then(res => {
-                        console.log(res.data);
-                        
-                        // console.log(res.data);
-                        if (res.data.deletedCount > 0) {
-                            Swal.fire({
-                                title: "Deleted!",
-                                text: "Your file has been deleted.",
-                                icon: "success"
-                            });
-                            refetch();
-                        }
-                    })
+                const res = await axiosSecure.delete(`/carts/${id}`)
+                console.log(res.data);
+                if (res.data.deletedCount > 0) {
+                    refetch();
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: "Your file has been deleted.",
+                        icon: "success"
+                    });
+
+                }
             }
         });
     }
@@ -58,7 +55,7 @@ const CartItem = ({ item, index }) => {
             </td>
             <td className="font-bold"><span className="text-orange-600">$</span> {price}</td>
             <td>
-                <button onClick={() => handleDelete(item)} className="btn btn-ghost btn-lg text-red-600 font-bold"><RiDeleteBin6Line></RiDeleteBin6Line></button>
+                <button onClick={() => handleDelete(_id)} className="btn btn-ghost btn-lg text-red-600 font-bold"><RiDeleteBin6Line></RiDeleteBin6Line></button>
             </td>
         </tr>
     );
