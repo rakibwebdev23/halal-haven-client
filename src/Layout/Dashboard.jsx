@@ -1,7 +1,7 @@
 import { FaAddressBook, FaBook, FaCalendar, FaEnvelope, FaHome, FaList, FaUsers, FaUtensils } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 import useCart from "../hooks/useCart";
-import { MdPayment, MdRateReview } from "react-icons/md";
+import { MdOutlineRestaurantMenu, MdPayment, MdRateReview } from "react-icons/md";
 import { IoCartSharp } from "react-icons/io5";
 import useAdmin from "../hooks/useAdmin";
 
@@ -51,7 +51,7 @@ const Dashboard = () => {
 
                     <div className="divider text-white"></div>
                     <li><NavLink to="/"><FaHome></FaHome>Home</NavLink></li>
-                    <li><NavLink to="/menuOffered"><FaHome></FaHome>Menu</NavLink></li>
+                    <li><NavLink to="/menuOffered"><MdOutlineRestaurantMenu></MdOutlineRestaurantMenu>Menu</NavLink></li>
                     <li><NavLink to="/contact"><FaEnvelope></FaEnvelope> Contact</NavLink></li>
                 </ul>
             </div>
