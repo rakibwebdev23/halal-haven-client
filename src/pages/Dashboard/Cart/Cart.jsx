@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HelmetShare from "../../../component/HelmetShare/HelmetShare";
 import useCart from "../../../hooks/useCart";
 import CartItem from "./CartItem";
@@ -13,7 +14,9 @@ const Cart = () => {
             <div className="text-4xl font-bold md:flex justify-evenly items-center">
                 <h2>Total Items: {cart.length}</h2>
                 <h2>Total Price: {totalPrice}</h2>
-                <button className="btn btn-primary">Pay</button>
+                {
+                    cart.length ? <Link to="/dashboard/payment"><button className="btn btn-primary">Pay</button></Link> : <button disabled className="btn btn-primary">Pay</button>
+                }
             </div>
             <div>
 
