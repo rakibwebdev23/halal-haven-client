@@ -18,7 +18,7 @@ const SignIn = () => {
         const password = data.password;
         signInUser(email, password)
             .then(result => {
-                const user = result.user;  
+                const user = result.user;
                 reset();
                 Swal.fire({
                     title: `${user.email} Sign In successfully`,

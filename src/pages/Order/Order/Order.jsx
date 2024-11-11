@@ -7,10 +7,13 @@ import { Link } from "react-router-dom";
 import SectionTitle from "../../../component/SectionTitle/SectionTitle";
 import HelmetShare from "../../../component/HelmetShare/HelmetShare";
 import useAuth from "../../../hooks/useAuth";
+import useAdmin from "../../../hooks/useAdmin";
 
 const Order = () => {
     const [, offeredItem, popularItem, pizzaItem, burgerItem, dessertItem, soupItem, saladItem, drinkItem] = MenuData();
     const { user } = useAuth();
+    const [isAdmin] = useAdmin();
+
     return (
         <div>
             <HelmetShare caption="Order"></HelmetShare>
@@ -25,7 +28,10 @@ const Order = () => {
                         <Link className="mr-2 text-orange-500 hover:underline" to="/">Home</Link>
                         <span className="text-2xl">/</span>
                         {
-                            user && <Link to="/dashboard/cart" className="ml-2 text-green-500 hover:underline">Dashboard</Link>
+                            user && isAdmin && <Link to="/dashboard/adminHome" className="ml-2 text-green-500 hover:underline">Dashboard</Link>
+                        }
+                        {
+                            user && !isAdmin && <Link to="/dashboard/userHome" className="ml-2 text-green-500 hover:underline">Dashboard</Link>
                         }
                     </div>
                 </div>

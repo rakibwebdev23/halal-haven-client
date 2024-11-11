@@ -49,14 +49,15 @@ const AuthProviders = ({ children }) => {
                     .then(res => {
                         // console.log(res.data.token);
                         if (res.data.token) {
-                            localStorage.setItem('access-token', res.data.token)
+                            localStorage.setItem('access-token', res.data.token);
+                            setLoading(false);
                         }
                     });
             }
             else {
-                localStorage.removeItem('access-token')
+                localStorage.removeItem('access-token');
+                setLoading(false);
             }
-            setLoading(false);
         });
         return () => {
             return unsubscribe();

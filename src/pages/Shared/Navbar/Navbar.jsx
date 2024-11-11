@@ -3,10 +3,12 @@ import logo from "../../../assets/logo/logos.png";
 import useAuth from "../../../hooks/useAuth";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import useCart from "../../../hooks/useCart";
+import useAdmin from "../../../hooks/useAdmin";
 
 const Navbar = () => {
     const { user, logOut } = useAuth();
     const [cart] = useCart();
+    const [isAdmin] = useAdmin();
 
     const handleLogOut = () => {
         logOut()
@@ -53,7 +55,13 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li><Link to="/order">Order</Link></li>
-                        {user && <li><Link to="/dashboard/cart">
+                        {user && isAdmin && <li><Link to="/dashboard/adminHome">
+                            <button className="flex items-center gap-2">
+                                <MdOutlineShoppingCart className="text-2xl font-bold text-orange-600"></MdOutlineShoppingCart>
+                                <div className="badge bg-orange-600 border-none text-white font-bold p-2">{cart.length}</div>
+                            </button>
+                        </Link></li>}
+                        {user && !isAdmin && <li><Link to="/dashboard/userHome">
                             <button className="flex items-center gap-2">
                                 <MdOutlineShoppingCart className="text-2xl font-bold text-orange-600"></MdOutlineShoppingCart>
                                 <div className="badge bg-orange-600 border-none text-white font-bold p-2">{cart.length}</div>
@@ -86,7 +94,13 @@ const Navbar = () => {
                         </details>
                     </li>
                     <li><Link to="/order">Order</Link></li>
-                    {user && <li><Link to="/dashboard/cart">
+                    {user && isAdmin && <li><Link to="/dashboard/adminHome">
+                        <button className="flex items-center gap-2">
+                            <MdOutlineShoppingCart className="text-2xl font-bold text-orange-600"></MdOutlineShoppingCart>
+                            <div className="badge bg-orange-600 border-none text-white font-bold p-2">{cart.length}</div>
+                        </button>
+                    </Link></li>}
+                    {user && !isAdmin && <li><Link to="/dashboard/userHome">
                         <button className="flex items-center gap-2">
                             <MdOutlineShoppingCart className="text-2xl font-bold text-orange-600"></MdOutlineShoppingCart>
                             <div className="badge bg-orange-600 border-none text-white font-bold p-2">{cart.length}</div>
