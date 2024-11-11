@@ -57,7 +57,9 @@ const ManageItems = () => {
                     </thead>
                     <tbody>
                         {
-                            menu.map((item, index) => <tr key={item._id}>
+                            menu.map((item, index) => <tr
+                                key={item._id}
+                            >
                                 <td>{index + 1}</td>
                                 <td>
                                     <div className="flex items-center gap-3">

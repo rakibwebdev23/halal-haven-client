@@ -27,21 +27,11 @@ const FoodCart = ({ item }) => {
                 .then(res => {
                     if (res.data.insertedId) {
                         Swal.fire({
+                            position: "top-center",
+                            icon: "success",
                             title: `${name} added to your cart`,
-                            showClass: {
-                                popup: `
-                                animate__animated
-                                animate__fadeInUp
-                                animate__faster
-                              `
-                            },
-                            hideClass: {
-                                popup: `
-                                animate__animated
-                                animate__fadeOutDown
-                                animate__faster
-                              `
-                            }
+                            showConfirmButton: false,
+                            timer: 1500
                         });
                         refetch();
                     }

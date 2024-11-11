@@ -21,7 +21,7 @@ const CartItem = ({ item, index }) => {
         }).then( async (result) => {
             if (result.isConfirmed) {
                 const res = await axiosSecure.delete(`/carts/${id}`)
-                console.log(res.data);
+                // console.log(res.data);
                 if (res.data.deletedCount > 0) {
                     refetch();
                     Swal.fire({
@@ -36,7 +36,7 @@ const CartItem = ({ item, index }) => {
     }
 
     return (
-        <tr className="w-full">
+        <tr className="w-full bg-gray-300">
             <td>{index + 1}</td>
             <td>
                 <div className="flex items-center gap-3">

@@ -13,9 +13,9 @@ const Cart = () => {
             <HelmetShare caption="My Cart"></HelmetShare>
             <div className="text-4xl font-bold md:flex justify-evenly items-center">
                 <h2>Total Items: {cart.length}</h2>
-                <h2>Total Price: {totalPrice}</h2>
+                <h2>Total Price:$ {totalPrice}</h2>
                 {
-                    cart.length ? <Link to="/dashboard/payment"><button className="btn btn-primary">Pay</button></Link> : <button disabled className="btn btn-primary">Pay</button>
+                    cart.length ? <Link to="/dashboard/payment"><button className="btn btn-outline btn-success">Payment</button></Link> : <button disabled className="btn btn-primary">Payment</button>
                 }
             </div>
             <div>

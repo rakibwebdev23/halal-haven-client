@@ -21,11 +21,11 @@ const Order = () => {
                 }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">
-                    <div className="max-w-md text-xl font-bold">
+                    <div className="max-w-md text-2xl font-bold">
                         <Link className="mr-2 text-orange-500 hover:underline" to="/">Home</Link>
                         <span className="text-2xl">/</span>
                         {
-                            user && <Link className="ml-2 text-green-500 hover:underline">Dashboard</Link>
+                            user && <Link to="/dashboard/cart" className="ml-2 text-green-500 hover:underline">Dashboard</Link>
                         }
                     </div>
                 </div>
