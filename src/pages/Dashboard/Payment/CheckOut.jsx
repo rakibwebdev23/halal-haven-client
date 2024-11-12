@@ -16,8 +16,7 @@ const CheckOut = () => {
     const axiosSecure = useAxiosSecure();
     const navigate = useNavigate();
     const [cart, refetch] = useCart();
-    const totalPrices = cart.reduce((total, item) => total + item.price, 0);
-    const totalPrice = totalPrices.toFixed(2);
+    const totalPrice = cart.reduce((total, item) => total + item.price, 0);
 
     useEffect(() => {
         if (totalPrice > 0) {
@@ -81,8 +80,12 @@ const CheckOut = () => {
                     menuItemIds: cart.map(item => item.menuId),
                     status: 'Pending'
                 }
+                console.log(paymetInfo);
+                
 
                 const res = await axiosSecure.post('/payments', paymetInfo);
+                console.log(res.data);
+                
                 if (res.data.paymentResult.insertedId) {
                     refetch();
                     Swal.fire({

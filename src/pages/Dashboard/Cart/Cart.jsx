@@ -6,7 +6,8 @@ import CartItem from "./CartItem";
 const Cart = () => {
     const [cart] = useCart();    
     const totalPrices = cart.reduce((total, item) => total + item.price, 0);
-    const totalPrice = totalPrices.toFixed(2);
+    const prices = totalPrices.toFixed(2);
+    const totalPrice = parseFloat(prices);
 
     return (
         <div>

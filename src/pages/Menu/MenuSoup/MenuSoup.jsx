@@ -14,7 +14,7 @@ const MenuSoup = () => {
                 imgBack={imgBack}
                 imgUp={upImg}
                 description="Warm up with our hearty soups made from fresh, wholesome ingredients. Try our signature Chicken Soup, infused with herbs and spices, or the rich Tomato Basil Bisque. Each bowl offers comfort and flavor, making it a great addition to any meal."
-                order="Get Soup Menu"
+                order="Get Soup"
                 title="Silk Road Soup"
             ></MenuCover>
             <div className="mt-20 mb-20">

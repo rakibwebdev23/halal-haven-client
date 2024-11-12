@@ -14,7 +14,7 @@ const MenuSalad = () => {
                 imgBack={imgBack}
                 imgUp={upImg}
                 description="Fresh and vibrant, our salads feature a mix of crisp greens and seasonal vegetables topped with your choice of protein. Drizzled with house-made dressings, each salad offers a light and refreshing option. Whether it's a Greek Salad or a hearty Chicken Caesar, you'll find a perfect balance of flavors."
-                order="Get Salad Menu"
+                order="Get Salad"
                 title="Garden Oasis Salad"
             ></MenuCover>
             <div className="mt-20 mb-20">

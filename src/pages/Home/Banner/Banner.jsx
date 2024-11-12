@@ -8,10 +8,10 @@ import img5 from "../../../assets/banner/banner5.jpg";
 import img6 from "../../../assets/banner/banner6.jpg";
 import imgBack from "../../../assets/images/bannerBack.jpg";
 import bannerUp from "../../../assets/images/imgRight.png";
-import { FaFirefoxBrowser, FaLocationArrow } from "react-icons/fa";
+import { FaFirefoxBrowser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../Banner/Banner.css";
-import { FaLocationCrosshairs, FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 import { BsTelephone } from "react-icons/bs";
 
 const Banner = () => {
@@ -28,14 +28,14 @@ const Banner = () => {
                             </div>
                             <div className="pt-6 space-y-6">
                                 <p className="text-justify mb-6">Welcome to Halal Haven, your ultimate destination for fresh, delicious, and 100% halal cuisine. Our menu features a variety of options, including gourmet pizzas, burgers, fresh salads, soups, and indulgent desserts. We pride ourselves on using high-quality ingredients and offering exceptional service. Whether dining in or ordering out, you'll enjoy a flavorful and satisfying experience. Taste the difference at Halal Haven, where every meal is made with care!</p>
-                                <Link to="/order" className="">
+                                <Link to="/order">
                                     <button className="relative px-6 py-2 text-white border-2 border-transparent bg-orange-600 transition-all duration-300 hover:border-orange-600 hover:bg-transparent hover:text-orange-600">
                                         Order Now
                                     </button>
                                 </Link>
                             </div>
                             <div className="md:flex justify-between pt-2 text-slate-400">
-                                <p className="flex items-center gap-2"><BsTelephone className="font-bold text-lg"></BsTelephone> +01307236959</p>
+                                <p className="flex items-center gap-2"><BsTelephone className="font-bold text-lg text-orange-500"></BsTelephone> +01307236959</p>
                                 <p className="flex items-center gap-3"><FaFirefoxBrowser className="text-red-500 text-lg" ></FaFirefoxBrowser>
                                     www.halalhaven.com
                                 </p>

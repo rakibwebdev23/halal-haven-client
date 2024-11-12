@@ -14,7 +14,7 @@ const MenuPizza = () => {
                 imgBack={imgBack}
                 imgUp={upImg}
                 description="Indulge in our handcrafted pizzas, featuring a crispy crust topped with zesty tomato sauce, rich mozzarella, and fresh ingredients. Choose from classics like Pepperoni and Margherita, or try unique options like BBQ Chicken. Each pizza is baked to perfection in our stone oven for a delightful taste experience."
-                order="Get Pizza Menu"
+                order="Get Pizza"
                 title="Delicious Pizza"
             ></MenuCover>
             <div className="mt-20 mb-20">

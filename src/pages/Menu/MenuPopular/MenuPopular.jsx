@@ -14,7 +14,7 @@ const MenuPopular = () => {
                 imgBack={imgBack}
                 imgUp={imgUp}
                 title="Popular Food"
-                order="Get Popular Menu"
+                order="Get Popular Food"
                 description="At Halal Haven, indulge in a delightful array of popular dishes that promise to tantalize your taste buds. Savor our handcrafted pizzas, topped with fresh ingredients and bubbling mozzarella, alongside juicy flame-grilled burgers bursting with flavor."
             ></MenuCover>
             <div className="mt-20 mb-20">

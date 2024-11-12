@@ -14,7 +14,7 @@ const MenuDrink = () => {
                 imgBack={imgBack}
                 imgUp={upImg}
                 description="Quench your thirst with our refreshing drink selection, including freshly squeezed juices and artisanal mocktails. Perfectly paired with any meal, our beverages enhance your dining experience. Enjoy a delightful sip to complement your culinary adventure."
-                order="Get Drink Menu"
+                order="Get Drink"
                 title="Good Drinks"
             ></MenuCover>
             <div className="mt-20 mb-20">

@@ -14,7 +14,7 @@ const MenuOffered = () => {
                 imgBack={imgBack}
                 imgUp={upImg}
                 description="Savor the taste of tender, perfectly marinated halal meats grilled over an open flame to lock in flavors. Enjoy a selection of skewers, steaks, and mixed platters, served with our signature sauces and sides."
-                order="Get Offered Menu"
+                order="Get Offered Item"
                 title="Offered Food"
             ></MenuCover>
             <div className="mt-20 mb-20">

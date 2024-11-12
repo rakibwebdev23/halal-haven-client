@@ -14,7 +14,7 @@ const MenuBurger = () => {
                 imgBack={imgBack}
                 imgUp={upImg}
                 description="Savor our juicy flame-grilled burgers made from premium halal beef, served on a toasted brioche bun. Customize your burger with fresh toppings, including crisp lettuce, ripe tomatoes, and our signature sauces. Each bite is a mouthwatering blend of flavors that will satisfy your cravings."
-                order="Get Burger Menu"
+                order="Get Burger"
                 title="The Halal Heatwave"
             ></MenuCover>
             <div className="mt-20 mb-20">

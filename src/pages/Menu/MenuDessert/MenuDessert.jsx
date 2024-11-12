@@ -14,7 +14,7 @@ const MenuDessert = () => {
                 imgBack={imgBack}
                 imgUp={upImg}
                 description="Treat yourself to our delectable desserts, including creamy cheesecakes and rich chocolate lava cakes. For a sweet twist, try our traditional Middle Eastern Baklava, crafted with care. Each dessert is a perfect ending to your meal that will satisfy your sweet cravings."
-                order="Get Dessert Menu"
+                order="Get Dessert"
                 title="Sweety Dessert"
             ></MenuCover>
             <div className="mt-20 mb-20">
