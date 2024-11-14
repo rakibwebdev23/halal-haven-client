@@ -1,7 +1,7 @@
-import { FaAddressBook, FaBook, FaCalendar, FaEnvelope, FaHome, FaList, FaUsers, FaUtensils } from "react-icons/fa";
+import { FaAddressBook, FaBook, FaEnvelope, FaHome, FaList, FaUsers, FaUtensils } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 import useCart from "../hooks/useCart";
-import { MdOutlineRestaurantMenu, MdPayment, MdRateReview } from "react-icons/md";
+import { MdOutlineRestaurantMenu, MdRateReview } from "react-icons/md";
 import { IoCartSharp } from "react-icons/io5";
 import useAdmin from "../hooks/useAdmin";
 
@@ -39,12 +39,13 @@ const Dashboard = () => {
                         </> : <>
 
                             <li><NavLink to="/dashboard/userHome"><FaHome></FaHome>User Home</NavLink></li>
-                            <li><NavLink to="/dashboard/reservation"><FaCalendar></FaCalendar> Reservation</NavLink></li>
+                            {/* <li><NavLink to="/dashboard/reservation"><FaCalendar></FaCalendar> Reservation</NavLink></li> */}
                             <li><NavLink to="/dashboard/cart"><IoCartSharp></IoCartSharp>My Cart({cart.length})</NavLink></li>
-                            <li><NavLink to="/dashboard/bookings"><MdPayment></MdPayment>
-                                Add Booking</NavLink></li>
-                            <li><NavLink to="/dashboard/paymentHistory"><FaAddressBook></FaAddressBook>Payment History</NavLink></li>
+                            {/* <li><NavLink to="/dashboard/bookings"><MdPayment></MdPayment>
+                                Add Booking</NavLink></li> */}
                             <li><NavLink to="/dashboard/review"><MdRateReview></MdRateReview>Add Review</NavLink></li>
+                            <li><NavLink to="/dashboard/paymentHistory"><FaAddressBook></FaAddressBook>Payment History</NavLink></li>
+
                         </>
                     }
 

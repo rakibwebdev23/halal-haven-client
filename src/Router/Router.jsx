@@ -28,6 +28,7 @@ import AllUsers from "../pages/Dashboard/Admin/AllUsers/AllUsers";
 import AdminRoute from "./AdminRoute";
 import UpdateItem from "../pages/Dashboard/Admin/UpdateItem/UpdateItem";
 import Payment from "../pages/Dashboard/Payment/Payment";
+import Contact from "../pages/Dashboard/Contact/Contact";
 
 export const router = createBrowserRouter([
     {
@@ -85,6 +86,10 @@ export const router = createBrowserRouter([
             {
                 path: "signin",
                 element: <SignIn></SignIn>
+            },
+            {
+                path: "contact",
+                element: <Contact></Contact>
             }
         ]
     },

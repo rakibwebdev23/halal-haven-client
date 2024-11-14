@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import HelmetShare from "../../../component/HelmetShare/HelmetShare";
 import useCart from "../../../hooks/useCart";
 import CartItem from "./CartItem";
 
@@ -11,7 +10,6 @@ const Cart = () => {
 
     return (
         <div>
-            <HelmetShare caption="My Cart"></HelmetShare>
             <div className="text-4xl font-bold md:flex justify-evenly items-center">
                 <h2>Total Items: {cart.length}</h2>
                 <h2>Total Price:$ {totalPrice}</h2>

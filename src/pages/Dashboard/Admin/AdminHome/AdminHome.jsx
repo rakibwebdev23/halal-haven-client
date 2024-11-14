@@ -3,6 +3,7 @@ import useAuth from "../../../../hooks/useAuth";
 import useAxiosSecure from "../../../../hooks/useAxiosSecure";
 import { FaBook, FaDollarSign, FaTruckPickup, FaUserAlt } from "react-icons/fa";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, PieChart, Pie, Legend } from 'recharts';
+import HelmetShare from "../../../../component/HelmetShare/HelmetShare";
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink', '#074717', '#c8553c'];
 
 const AdminHome = () => {
@@ -59,6 +60,7 @@ const AdminHome = () => {
 
     return (
         <div>
+            <HelmetShare caption="Dashboard"></HelmetShare>
             <div className="flex items-center justify-between">
                 <h1 className="text-3xl font-semibold">Hi, Welcome to <span className="text-orange-500">{user.displayName}</span></h1>
                 {user.photoURL !== null && <div className="avatar ml-6">
