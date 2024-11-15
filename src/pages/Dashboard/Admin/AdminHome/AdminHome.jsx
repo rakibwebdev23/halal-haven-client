@@ -111,7 +111,7 @@ const AdminHome = () => {
                             top: 20,
                             right: 30,
                             left: 20,
-                            bottom: 5,
+                            bottom: 10,
                         }}
                     >
                         <CartesianGrid strokeDasharray="3 3" />
@@ -119,7 +119,7 @@ const AdminHome = () => {
                         <YAxis />
                         <Bar dataKey="totalQuantity" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                             {chartData.map((entry, index) => (
-                                <Cell key={`cell-${index}`} fill={colors[index % 8]} />
+                                <Cell key={`cell-${index}`} fill={colors[index % 10]} />
                             ))}
                         </Bar>
                     </BarChart>
