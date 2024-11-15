@@ -2,7 +2,7 @@ import useMenu from "../../hooks/useMenu";
 
 const MenuData = () => {
 
-    const [menu, refetch] = useMenu();    
+    const [menu, refetch] = useMenu();
 
     const offeredItem = menu.filter(item => item.category === "offered");
     const popularItem = menu.filter(item => item.category === "popular");

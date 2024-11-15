@@ -8,11 +8,22 @@ import SectionTitle from "../../../component/SectionTitle/SectionTitle";
 import HelmetShare from "../../../component/HelmetShare/HelmetShare";
 import useAuth from "../../../hooks/useAuth";
 import useAdmin from "../../../hooks/useAdmin";
+import { useState } from "react";
+import { FaSearch } from "react-icons/fa";
 
 const Order = () => {
     const [, offeredItem, popularItem, pizzaItem, burgerItem, dessertItem, soupItem, saladItem, drinkItem] = MenuData();
     const { user } = useAuth();
     const [isAdmin] = useAdmin();
+
+    // search 
+    const [searchTerm, setSearchTerm] = useState("");
+
+    // Filter function
+    const filterItems = (items) => {
+        if (!searchTerm) return items;
+        return items.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    };
 
     return (
         <div>
@@ -24,7 +35,7 @@ const Order = () => {
                 }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">
-                    <div className="max-w-md text-2xl font-bold">
+                    <div className="max-w-md text-xl font-semibold">
                         <Link className="mr-2 text-orange-500 hover:underline" to="/">Home</Link>
                         <span className="text-2xl">/</span>
                         {
@@ -33,6 +44,19 @@ const Order = () => {
                         {
                             user && !isAdmin && <Link to="/dashboard/userHome" className="ml-2 text-green-500 hover:underline">Dashboard</Link>
                         }
+
+                        <div className="flex justify-center mt-5">
+                            <div className="relative">
+                                <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-orange-500 text-xl" />
+                                <input
+                                    type="text"
+                                    placeholder="Search items..."
+                                    value={searchTerm}
+                                    onChange={(e) => setSearchTerm(e.target.value)}
+                                    className="p-2 pl-10 rounded-md text-white bg-black bg-opacity-40 text-lg border border-orange-600"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -56,46 +80,14 @@ const Order = () => {
                     </TabList>
 
                     <div className="w-3/4 p-4 ml-4 border-l border-gray-200">
-                        <TabPanel>
-                            <div>
-                                <OrderFood items={offeredItem}></OrderFood>
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div>
-                                <OrderFood items={popularItem}></OrderFood>
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div>
-                                <OrderFood items={pizzaItem}></OrderFood>
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div>
-                                <OrderFood items={burgerItem}></OrderFood>
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div>
-                                <OrderFood items={dessertItem}></OrderFood>
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div>
-                                <OrderFood items={soupItem}></OrderFood>
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div>
-                                <OrderFood items={saladItem}></OrderFood>
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div>
-                                <OrderFood items={drinkItem}></OrderFood>
-                            </div>
-                        </TabPanel>
+                        <TabPanel><OrderFood items={filterItems(offeredItem)} /></TabPanel>
+                        <TabPanel><OrderFood items={filterItems(popularItem)} /></TabPanel>
+                        <TabPanel><OrderFood items={filterItems(pizzaItem)} /></TabPanel>
+                        <TabPanel><OrderFood items={filterItems(burgerItem)} /></TabPanel>
+                        <TabPanel><OrderFood items={filterItems(dessertItem)} /></TabPanel>
+                        <TabPanel><OrderFood items={filterItems(soupItem)} /></TabPanel>
+                        <TabPanel><OrderFood items={filterItems(saladItem)} /></TabPanel>
+                        <TabPanel><OrderFood items={filterItems(drinkItem)} /></TabPanel>
                     </div>
                 </Tabs>
             </div>

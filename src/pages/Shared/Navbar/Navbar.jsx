@@ -4,7 +4,6 @@ import useAuth from "../../../hooks/useAuth";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import useCart from "../../../hooks/useCart";
 import useAdmin from "../../../hooks/useAdmin";
-import { FaAngleDown } from "react-icons/fa";
 
 const Navbar = () => {
     const { user, logOut } = useAuth();
@@ -41,8 +40,8 @@ const Navbar = () => {
                         className="menu menu-md dropdown-content rounded-box z-[1] mt-3 w-52 p-2">
                         <li><Link to="/">Home</Link></li>
                         <li className="relative group">
-                            <div className="cursor-pointer text-white">Our Menu<FaAngleDown className="text-xl"></FaAngleDown></div>
-                            <ul className="absolute hidden group-hover:block bg-white p-4 text-black mt-10 rounded shadow-lg">
+                            <div className="cursor-pointer text-white">Our Menu</div>
+                            <ul className="absolute hidden group-hover:block bg-white p-4 text-black mt-8 rounded shadow-lg">
                                 <li><Link to="/menuOffered" className="block px-4 py-2 hover:bg-orange-300">Offered</Link></li>
                                 <li><Link to="/menuPopular" className="block px-4 py-2 hover:bg-orange-300">Popular</Link></li>
                                 <li><Link to="/menuPizza" className="block px-4 py-2 hover:bg-orange-300">Pizza</Link></li>
@@ -77,8 +76,8 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal px-2 text-sm">
                     <li><Link to="/">Home</Link></li>
                     <li className="relative group">
-                        <div className="cursor-pointer text-white">Our Menu<FaAngleDown className="text-xl"></FaAngleDown></div>
-                        <ul className="absolute hidden group-hover:block bg-white p-4 text-black mt-10 rounded">
+                        <div className="cursor-pointer text-white">Our Menu</div>
+                        <ul className="absolute hidden group-hover:block bg-white p-4 text-black mt-8 rounded">
                             <li><Link to="/menuOffered" className="block px-4 py-2 hover:bg-orange-300">Offered</Link></li>
                             <li><Link to="/menuPopular" className="block px-4 py-2 hover:bg-orange-300">Popular</Link></li>
                             <li><Link to="/menuPizza" className="block px-4 py-2 hover:bg-orange-300">Pizza</Link></li>
