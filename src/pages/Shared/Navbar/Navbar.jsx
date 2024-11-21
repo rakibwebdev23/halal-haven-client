@@ -73,7 +73,7 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-2 text-sm">
+                <ul className="menu menu-horizontal px-2 text-sm font-semibold ">
                     <li><Link to="/">Home</Link></li>
                     <li className="relative group">
                         <div className="cursor-pointer text-white">Our Menu</div>
@@ -103,7 +103,7 @@ const Navbar = () => {
                     </Link></li>}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end font-semibold">
                 {
                     user ? <>
                         <Link onClick={handleLogOut} className="">Sign Out</Link>
