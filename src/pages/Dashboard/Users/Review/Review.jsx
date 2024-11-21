@@ -21,7 +21,7 @@ const Review = () => {
                 "Content-Type": "multipart/form-data"
             }
         });
-        console.log(res.data);
+        // console.log(res.data);
         if (res.data.success) {
             const reviewItem = {
                 name: data.name,
@@ -29,13 +29,12 @@ const Review = () => {
                 rating,
                 image: res.data.data.display_url
             }
-            console.log(reviewItem);
 
             const reviewRes = await axiosSecure.post("/review", reviewItem);
 
-            console.log(reviewRes.data);
+            // console.log(reviewRes.data);
             if (reviewRes.data.insertedId) {
-                console.log(reviewRes.data);
+                // console.log(reviewRes.data);
                 reset();
                 Swal.fire({
                     position: "top-center",

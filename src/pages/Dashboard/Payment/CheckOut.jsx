@@ -80,11 +80,10 @@ const CheckOut = () => {
                     menuItemIds: cart.map(item => item.menuId),
                     status: 'Pending'
                 }
-                console.log(paymetInfo);
                 
 
                 const res = await axiosSecure.post('/payments', paymetInfo);
-                console.log(res.data);
+                // console.log(res.data);
                 
                 if (res.data.paymentResult.insertedId) {
                     refetch();

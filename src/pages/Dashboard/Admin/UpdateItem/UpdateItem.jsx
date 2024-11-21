@@ -23,7 +23,7 @@ const UpdateItem = () => {
                 "Content-Type": "multipart/form-data"
             }
         });
-        console.log(res.data);
+        // console.log(res.data);
         if (res.data.success) {
             const menuItem = {
                 name: data.name,
@@ -33,7 +33,7 @@ const UpdateItem = () => {
                 image: res.data.data.display_url
             }
             const menuRes = await axiosSecure.patch(`/menu/${_id}`, menuItem);
-            console.log(menuRes.data);
+            // console.log(menuRes.data);
             if (menuRes.data.modifiedCount > 0) {
                 reset();
                 Swal.fire({
