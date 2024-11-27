@@ -47,8 +47,8 @@ const UserHome = () => {
                     <div className="stat-value">{stats.length}</div>
                 </div>
             </div>
-            <div className="flex items-center gap-6 mt-16 h-[300px]">
-                <div className="w-1/2 p-10">
+            <div className="flex lg:flex-row flex-col items-center gap-6 mt-16 lg:h-[300px] min-h-screen mb-16 lg:mb-0">
+                <div className="lg:w-1/2 p-10">
                     {user.photoURL !== null && <div className="avatar items-center ml-6 flex flex-col">
                         <div className="w-40 rounded-lg">
                             <img className="" src={user.photoURL} />
@@ -56,8 +56,8 @@ const UserHome = () => {
                         <h2 className="text-2xl font-bold mt-2">{ user.displayName}</h2>
                     </div>}
                 </div>
-                <div className="divider divider-horizontal divider-warning"></div>
-                <div className="w-1/2 p-10">
+                <div className="divider lg:divider-horizontal divider-warning"></div>
+                <div className="lg:w-1/2 lg:p-10">
                     <h2 className="text-4xl font-bold mb-6">Your Activities</h2>
                     <p className="text-xl font-bold text-green-500 flex items-center gap-1 mb-2"><span className="text-orange-600"><FaCartPlus></FaCartPlus></span> Orders: {stats.length}</p>
                     <p className="text-xl font-bold text-red-600 flex items-center gap-1"><span className="text-black"><FaCcMastercard></FaCcMastercard></span>Payment: { stats.length}</p>

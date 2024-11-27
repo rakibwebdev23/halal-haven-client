@@ -60,7 +60,7 @@ const AddItems = () => {
                             <p className="text-red-600">Recipe name is required</p>
                         )}
                     </div>
-                    <div className="flex items-center w-full gap-4">
+                    <div className="lg:flex items-center w-full gap-4">
                         {/* category field */}
                         <div className="form-control w-full">
                             <label className="label">

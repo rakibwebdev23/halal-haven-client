@@ -3,7 +3,7 @@ import imgBack from "../../../assets/cover/cover1.jpg";
 const Contact = () => {
     return (
         <div
-            className="hero min-h-screen"
+            className="hero min-h-screen mb-10"
             style={{
                 backgroundImage: `url("${imgBack}")`
             }}>

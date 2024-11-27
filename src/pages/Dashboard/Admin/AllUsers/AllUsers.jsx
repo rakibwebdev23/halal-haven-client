@@ -78,7 +78,7 @@ const AllUsers = () => {
                 <table className="table">
                     {/* head */}
                     <thead>
-                        <tr className="text-xl font-bold bg-orange-400">
+                        <tr className="lg:text-xl font-bold bg-orange-400">
                             <th>#</th>
                             <th>Name</th>
                             <th>Email</th>

@@ -10,11 +10,11 @@ const Cart = () => {
 
     return (
         <div>
-            <div className="text-4xl font-bold md:flex justify-evenly items-center">
+            <div className="text-4xl font-bold lg:flex justify-evenly items-center space-y-4 lg:space-y-0">
                 <h2>Total Items: {cart.length}</h2>
                 <h2>Total Price:$ {totalPrice}</h2>
                 {
-                    cart.length ? <Link to="/dashboard/payment"><button className="btn btn-outline btn-success">Payment</button></Link> : <button disabled className="btn btn-primary">Payment</button>
+                    cart.length ? <Link to="/dashboard/payment"><button className="btn btn-outline btn-success mt-6 lg:mt-0">Payment</button></Link> : <button disabled className="btn btn-primary">Payment</button>
                 }
             </div>
             <div>
@@ -22,7 +22,7 @@ const Cart = () => {
                 <div className="overflow-x-auto">
                     <table className="table mt-10">
                         {/* head */}
-                        <thead className="bg-orange-400 p-2 text-xl">
+                        <thead className="bg-orange-400 p-2 lg:text-xl">
                             <tr>
                                 <th>
                                     #

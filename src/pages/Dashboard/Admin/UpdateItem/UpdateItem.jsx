@@ -59,7 +59,7 @@ const UpdateItem = () => {
                         </label>
                         <input defaultValue={name} type="text" placeholder="Name" className="input input-bordered" {...register("name", { required: true })} />
                     </div>
-                    <div className="flex items-center w-full gap-4">
+                    <div className="lg:flex items-center w-full gap-4">
                         {/* category field */}
                         <div className="form-control w-full">
                             <label className="label">

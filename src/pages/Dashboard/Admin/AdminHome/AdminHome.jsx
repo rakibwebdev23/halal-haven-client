@@ -59,17 +59,17 @@ const AdminHome = () => {
     })
 
     return (
-        <div>
+        <div className="px-4">
             <HelmetShare caption="Dashboard"></HelmetShare>
-            <div className="flex items-center justify-between">
+            <div className="lg:flex items-center lg:justify-between">
                 <h1 className="text-3xl font-semibold">Hi, Welcome to <span className="text-orange-500">{user.displayName}</span></h1>
                 {user.photoURL !== null && <div className="avatar ml-6">
-                    <div className="w-20 rounded-full">
+                    <div className="w-20 rounded-full lg:my-0 my-10">
                         <img className="" src={user.photoURL} />
                     </div>
                 </div>}
             </div>
-            <div className="stats shadow-transparent mt-10 w-full">
+            <div className="flex lg:flex-row flex-col stats shadow-transparent mt-10 w-full">
                 <div className="stat bg-orange-400">
                     <div className="stat-figure text-white">
                         <FaDollarSign className="text-4xl"></FaDollarSign>
@@ -101,8 +101,8 @@ const AdminHome = () => {
                     <div className="stat-value">{stats.orders}</div>
                 </div>
             </div>
-            <div className="flex items-center gap-6 mt-10 bg-orange-100">
-                <div className="w-1/2">
+            <div className="flex lg:flex-row flex-col items-center lg:gap-6 mt-10 lg:bg-orange-100 w-full">
+                <div className="lg:w-1/2">
                     <BarChart
                         width={500}
                         height={300}
@@ -124,7 +124,7 @@ const AdminHome = () => {
                         </Bar>
                     </BarChart>
                 </div>
-                <div className="w-1/2">
+                <div className="lg:w-1/2">
                     <PieChart width={400} height={400}>
                         <Pie
                             data={pieChartData}

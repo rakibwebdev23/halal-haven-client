@@ -8,7 +8,7 @@ const Payment = () => {
     return (
         <div>
             <SectionTitle title="payment and eating" subTitle="payment here"></SectionTitle>
-            <div className="mt-20 w-3/4 bg-orange-300 shadow-2xl p-6 rounded-xl text-center mx-auto">
+            <div className="lg:mt-20 mt-14 lg:w-3/4 w-full bg-orange-300 shadow-2xl lg:p-6 p-2 rounded-xl text-center mx-auto">
                 <Elements stripe={stripePromise}>
                     <CheckOut></CheckOut>
                 </Elements>
