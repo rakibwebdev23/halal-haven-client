@@ -3,7 +3,7 @@ import { FaRegStar } from "react-icons/fa";
 
 const MarqueSlide = () => {
     return (
-        <div className="pt-6 my-10">
+        <div className="lg:pt-10 pt-6 my-16">
             <Marquee gradient={200} speed={50}>
                 <p className="text-slate-300 font-bold uppercase flex items-center mr-10 "><FaRegStar className="mr-10 text-6xl"></FaRegStar><span className="text-8xl">Italian pizza</span></p>
                 <p className=" text-slate-300 font-bold uppercase  flex items-center mr-10 "><FaRegStar className="mr-10 text-6xl"></FaRegStar><span className="text-8xl">Golden Saffron Sip soup</span></p>

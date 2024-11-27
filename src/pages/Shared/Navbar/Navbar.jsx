@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar fixed z-10 max-w-screen-xl text-white bg-black bg-opacity-30">
+        <div className="navbar fixed z-10 text-white bg-black bg-opacity-60 font-poppins">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,10 +37,12 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-md dropdown-content rounded-box z-[1] mt-3 w-52 p-2">
+                        className="menu menu-md dropdown-content rounded-box z-[1] mt-3 w-52 p-2 bg-white text-black">
                         <li><Link to="/">Home</Link></li>
+                        
+                        <li><Link to="/order">Order</Link></li>
                         <li className="relative group">
-                            <div className="cursor-pointer text-white">Our Menu</div>
+                            <div className="cursor-pointer text-black">Our Menu</div>
                             <ul className="absolute hidden group-hover:block bg-white p-4 text-black mt-8 rounded shadow-lg">
                                 <li><Link to="/menuOffered" className="block px-4 py-2 hover:bg-orange-300">Offered</Link></li>
                                 <li><Link to="/menuPopular" className="block px-4 py-2 hover:bg-orange-300">Popular</Link></li>
@@ -52,7 +54,6 @@ const Navbar = () => {
                                 <li><Link to="/menuDrink" className="block px-4 py-2 hover:bg-orange-300">Drink</Link></li>
                             </ul>
                         </li>
-                        <li><Link to="/order">Order</Link></li>
                         {user && isAdmin && <li><Link to="/dashboard/adminHome">
                             <button className="flex items-center gap-2">
                                 <MdOutlineShoppingCart className="text-2xl font-bold text-orange-600"></MdOutlineShoppingCart>
@@ -68,8 +69,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link className="flex items-center gap-2" to="/">
-                    <img className="w-16 rounded-full" src={logo} alt="" />
-                    <h2 className="text-2xl font-bold text-orange-500">Halal Haven</h2>
+                    <img className="lg:w-16 w-12 rounded-full" src={logo} alt="" />
+                    <h2 className="lg:text-2xl text-xl font-bold text-orange-500">Halal Haven.</h2>
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
