@@ -33,7 +33,7 @@ const Banner = () => {
                         backgroundPosition: "center",
                     }}
                 >
-                    <div className="flex lg:flex lg:justify-between items-center bg-black bg-opacity-60 lg:px-8 px-4 text-white w-full  lg:min-h-full min-h-screen">
+                    <div className="flex lg:justify-between items-center bg-black bg-opacity-60 lg:px-8 px-4 text-white w-full  lg:min-h-full min-h-screen">
                         <div className="lg:w-1/2 space-y-6 text-left fade-in-up">
                             <h2 className="text-5xl lg:text-6xl font-bold leading-tight">
                                 Welcome to <br />
