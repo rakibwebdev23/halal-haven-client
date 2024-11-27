@@ -46,9 +46,9 @@ const SignIn = () => {
     return (
         <div>
             <HelmetShare caption="SignIn"></HelmetShare>
-            <div className="hero w-full min-h-screen" style={{ backgroundImage: `url("${img}")` }}>
-                <div className="hero-content min-h-screen bg-black bg-opacity-60 w-full">
-                    <div className="card w-1/2 bg-black bg-opacity-50 p-10 mt-10">
+            <div className="hero fixed lg:block w-full min-h-screen" style={{ backgroundImage: `url("${img}")` }}>
+                <div className="lg:hero min-h-screen bg-black bg-opacity-60 w-full lg:px-0 px-4">
+                    <div className="card lg:w-1/2 bg-black bg-opacity-50 p-10 mt-10">
                         <h2 className="text-orange-500 text-4xl font-bold text-center">Sign In</h2>
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                             <div className="form-control">

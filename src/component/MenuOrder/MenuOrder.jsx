@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const MenuOrder = ({ menuImg }) => {
 
     return (
-        <div className="w-full lg:h-[400px] min-h-screen lg:flex items-center gap-10 mt-28 px-4 lg:px-8 font-poppins mb-16">
+        <div className="w-full lg:h-[400px] min-h-screen lg:flex items-center gap-10 mt-28 lg:mt-6 px-4 lg:px-8 font-poppins mb-20 lg:mb-8">
             <div className="lg:w-1/2">
                 <img className="lg:h-[400px] rounded-md lg:rounded-t-full lg:rounded-r-full w-full" src={menuImg} alt="" />
             </div>

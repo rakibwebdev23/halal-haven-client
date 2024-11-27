@@ -15,7 +15,7 @@ const MenuCover = ({ title, description, order, imgUp,imgBack }) => {
                 bgClassName="bg-cover bg-center"
             >
                 <div className="lg:h-[700px] flex mx-auto justify-center">
-                    <div className="flex lg:justify-between items-center bg-black bg-opacity-60 lg:px-8 px-4 text-white w-full  min-h-screen">
+                    <div className="flex lg:justify-between items-center bg-gray-900 bg-opacity-50 lg:px-8 px-4 text-white w-full min-h-screen">
                         <div className="lg:w-1/2 text-left text-white  space-y-6 mx-auto">
                             <div className="lg:text-6xl text-4xl font-bold">
                                 <h2>Welcome to</h2>
