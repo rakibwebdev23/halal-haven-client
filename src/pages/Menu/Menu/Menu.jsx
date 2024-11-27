@@ -6,7 +6,7 @@ const Menu = ({ items }) => {
 
         <div>
             <HelmetShare caption="Menu"></HelmetShare>
-            <div className="grid gap-10 md:grid-cols-2 mx-auto">
+            <div className="grid gap-10 lg:grid-cols-2 mx-auto px-4 lg:px-8">
                 {
                     items.map(item => <MenuCart
                         key={item._id}

@@ -61,12 +61,12 @@ const FoodCart = ({ item }) => {
                     src={image}
                     alt="food" />
             </figure>
-            <p className="top-32 ml-4 bg-black bg-opacity-60 text-white px-2 py-1 absolute"><span className="text-orange-500">$</span> {price}</p>
-            <div className="card-body text-justify">
-                <h2 className="card-title">{name}</h2>
-                <p>{recipe}</p>
+            <p className="lg:top-32 top-44 bg-black bg-opacity-60 text-white px-2 py-1 absolute"><span className="text-orange-500">$</span> {price}</p>
+            <div className="card-body text-justify space-y-2">
+                <h2 className="card-title font-bold">{name}</h2>
+                <p className="font-poppins text-justify text-black">{recipe}</p>
                 <div className="card-actions">
-                    <button onClick={handleAddOrder} className="relative px-6 py-2 text-white border-2 border-transparent bg-orange-600 transition-all duration-300 hover:border-orange-600 hover:bg-transparent hover:text-orange-700 uppercase rounded-l-xl rounded-t-xl font-bold">
+                    <button onClick={handleAddOrder} className="relative w-full lg:w-3/4 py-3 text-white border-2 border-transparent bg-orange-600 transition-all duration-300 hover:border-orange-600 hover:bg-transparent hover:text-orange-700 uppercase rounded-l-xl rounded-t-xl font-bold">
                         Add to cart
                     </button>
                 </div>

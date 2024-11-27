@@ -67,8 +67,8 @@ const Order = () => {
                 ></SectionTitle>
             </div>
             <div className="flex">
-                <Tabs className="flex w-full mt-20">
-                    <TabList className="flex flex-col w-1/4 space-y-2 font-bold uppercase text-white">
+                <Tabs className="lg:flex w-full max-w-full mt-20">
+                    <TabList className="flex flex-col lg:w-1/4 space-y-2 font-bold uppercase text-white lg:px-8 px-4">
                         <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Offered Food</Tab>
                         <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Popular Food</Tab>
                         <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Pizza</Tab>
@@ -79,7 +79,7 @@ const Order = () => {
                         <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Drinks</Tab>
                     </TabList>
 
-                    <div className="w-3/4 p-4 ml-4 border-l border-gray-200">
+                    <div className="lg:w-3/4 mx-auto p-4 mt-10 lg:mt-0 lg:ml-4 border-l border-gray-200">
                         <TabPanel><OrderFood items={filterItems(offeredItem)} /></TabPanel>
                         <TabPanel><OrderFood items={filterItems(popularItem)} /></TabPanel>
                         <TabPanel><OrderFood items={filterItems(pizzaItem)} /></TabPanel>

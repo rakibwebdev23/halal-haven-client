@@ -4,7 +4,7 @@ const MenuCart = ({ item }) => {
     const { name, recipe, price, image } = item;
 
     return (
-        <div className="flex items-center gap-6 rounded-l-full  ">
+        <div className="flex items-center gap-6 rounded-l-full">
             <div className="flex items-center gap-4 text-justify">
                 <img className="h-32 w-36 rounded-l-full rounded-b-full" src={image} alt="" />
                 <div>

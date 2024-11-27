@@ -8,13 +8,13 @@ const PopularItem = () => {
     const [, , popularItem] = MenuData();
 
     return (
-        <div className="lg:px-8 px-4">
+        <div>
             <BannerPopular></BannerPopular>
             <SectionTitle
                 subTitle="Popular Menu"
                 title="We provide exclusive food based on BD explore our popular food"
             ></SectionTitle>
-            <div className="grid gap-10 lg:grid-cols-2 mx-auto mt-20">
+            <div className="grid gap-10 lg:grid-cols-2 mx-auto mt-20 lg:px-8 px-4">
                 {
                     popularItem.map(item => <MenuCart
                         key={item._id}
