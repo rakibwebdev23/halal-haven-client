@@ -22,6 +22,7 @@ const Banner = () => {
                 infiniteLoop
                 showStatus={false}
                 showArrows={true}
+                interval={6000} 
                 className="carousel-container"
             >
                 {/* First Slide */}
@@ -39,7 +40,7 @@ const Banner = () => {
                                 Welcome to <br />
                                 <span className="text-orange-500">Halal Haven</span>
                             </h2>
-                            <p className="text-justify mb-6">
+                            <p className="text-justify lg:hyphens-none hyphens-auto break-words leading-relaxed mb-6">
                                 Welcome to Halal Haven, your ultimate destination for fresh, delicious, and 100% halal cuisine. Our menu features a variety of options, including gourmet pizzas, burgers, fresh salads, soups, and indulgent desserts. We pride ourselves on using high-quality ingredients and offering exceptional service. Whether dining in or ordering out, you'll enjoy a flavorful and satisfying experience. Taste the difference at Halal Haven, where every meal is made with care!
                             </p>
                             <Link to="/order">

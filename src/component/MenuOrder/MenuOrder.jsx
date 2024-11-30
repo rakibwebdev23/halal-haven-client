@@ -13,7 +13,7 @@ const MenuOrder = ({ menuImg }) => {
                     <h2 className="lg:text-5xl font-bold space-y-2 text-black text-3xl leading-tight">the quality food for your good health</h2>
                 </div>
                 <div className="pt-4">
-                    <p className="space-y-2 text-slate-700 text-justify leading-relaxed">"Halal Haven" is a cozy and welcoming restaurant that caters to those who value high-quality, halal-certified cuisine. Our menu is a fusion of flavors from around the world, offering a diverse range of dishes that meet the highest standards of halal preparation. From savory grilled meats to fresh salads, mouth-watering desserts, and refreshing drinks, every item on our menu is crafted with care and respect for halal traditions.</p>
+                    <p className="space-y-2 text-slate-700 text-justify leading-relaxed hyphens-auto break-words">"Halal Haven" is a cozy and welcoming restaurant that caters to those who value high-quality, halal-certified cuisine. Our menu is a fusion of flavors from around the world, offering a diverse range of dishes that meet the highest standards of halal preparation. From savory grilled meats to fresh salads, mouth-watering desserts, and refreshing drinks, every item on our menu is crafted with care and respect for halal traditions.</p>
                     <Link to="/order">
                         <button className="relative mt-6 px-10 py-3 font-bold text-white border-2 border-transparent bg-orange-500 transition-all duration-300 hover:border-orange-600 hover:bg-transparent hover:text-orange-600">
                             Order Now

@@ -31,7 +31,7 @@ const Testmonial = () => {
                     rewind={true}
                     navigation={true}
                     autoplay={{
-                        delay: 3000,
+                        delay: 4000,
                         disableOnInteraction: false,
                     }}
                     modules={[Navigation, Autoplay]}
@@ -39,7 +39,7 @@ const Testmonial = () => {
                 >
                     {reviews.map((review) => (
                         <SwiperSlide key={review._id}>
-                            <div className="flex flex-col items-center justify-center space-y-2 lg:text-lg py-10 lg:px-28 lg:text-center text-justify leading-relaxed px-14 bg-orange-200">
+                            <div className="flex flex-col items-center justify-center space-y-2 lg:text-lg py-10 lg:px-28 lg:text-center text-left leading-relaxed px-14 bg-orange-200">
                                 <h2 className="text-4xl font-bold">{review.name}</h2>
                                 <Rating
                                     style={{ maxWidth: 160 }}

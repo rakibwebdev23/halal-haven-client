@@ -8,7 +8,7 @@ const BannerPopular = () => {
                 <div className="lg:h-[300px] px-12 text-white bg-black bg-opacity-50 flex items-center">
                     <div className='lg:px-24 py-10 lg:py-0'>
                         <h1 className="mb-5 lg:text-5xl text-4xl text-orange-600 font-bold uppercase">Halal Haven</h1>
-                        <p className="mb-5 lg:text-center text-left leading-tight">
+                        <p className="mb-5 lg:text-center text-left leading-relaxed">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, libero accusamus laborum deserunt ratione dolor officiis praesentium! Deserunt magni aperiam dolor eius dolore at, nihil iusto ducimus incidunt quibusdam nemo.
                         </p>
                     </div>

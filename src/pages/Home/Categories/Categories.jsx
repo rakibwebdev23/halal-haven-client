@@ -24,7 +24,7 @@ const Categories = () => {
                     clickable: true,
                 }}
                 autoplay={{
-                    delay: 3000,
+                    delay: 4000,
                     disableOnInteraction: false, 
                 }}
                 modules={[FreeMode, Pagination, Autoplay]} 

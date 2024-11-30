@@ -23,7 +23,7 @@ const UserHome = () => {
         <div>
             <HelmetShare caption="Dashboard"></HelmetShare>
             <h1 className="text-3xl font-semibold">Hi, Welcome to <span className="text-orange-500">{user.displayName}</span></h1>
-            <div className="stats shadow-transparent mt-10 w-full">
+            <div className="shadow-transparent mt-10 w-full stats flex flex-col lg:flex-row">
                 <div className="stat bg-orange-400">
                     <div className="stat-figure text-white">
                         <FaDollarSign className="text-4xl"></FaDollarSign>

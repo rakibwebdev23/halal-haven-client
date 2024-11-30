@@ -22,7 +22,7 @@ const MenuCover = ({ title, description, order, imgUp,imgBack }) => {
                                 <h2 className="text-orange-500 mt-4">Halal Haven <br /><span className="text-yellow-500">{title}</span></h2>
                             </div>
                             <div className="pt-8">
-                                <p className="text-justify mb-8">{description}</p>
+                                <p className="text-justify hyphens-auto break-words leading-relaxed mb-8">{description}</p>
                                 <Link to="/order"><button className="relative px-6 py-2 text-white border-2 border-transparent bg-orange-600 transition-all duration-300 hover:border-orange-600 hover:bg-transparent hover:text-orange-600">
                                     {order}
                                 </button></Link>

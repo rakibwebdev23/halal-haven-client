@@ -5,7 +5,7 @@ const MenuCart = ({ item }) => {
 
     return (
         <div className="flex items-center gap-6 rounded-l-full">
-            <div className="flex items-center gap-4 text-justify">
+            <div className="flex items-center gap-4 text-justify lg:hyphens-none hyphens-auto break-words ">
                 <img className="h-32 w-36 rounded-l-full rounded-b-full" src={image} alt="" />
                 <div>
                     <h2 className="text-xl font-bold">{name}</h2>
