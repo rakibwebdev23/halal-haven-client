@@ -56,7 +56,7 @@ const UserHome = () => {
                         <h2 className="text-2xl font-bold mt-2">{ user.displayName}</h2>
                     </div>}
                 </div>
-                <div className="divider lg:divider-horizontal divider-warning lg:h-[200px]"></div>
+                <div className="divider lg:divider-horizontal divider-warning lg:h-[300px]"></div>
                 <div className="lg:w-1/2 lg:p-10">
                     <h2 className="text-4xl font-bold mb-6">Your Activities</h2>
                     <p className="text-xl font-bold text-green-500 flex items-center gap-1 mb-2"><span className="text-orange-600"><FaCartPlus></FaCartPlus></span> Orders: {stats.length}</p>
