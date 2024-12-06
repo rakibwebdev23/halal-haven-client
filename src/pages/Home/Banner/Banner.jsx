@@ -21,8 +21,9 @@ const Banner = () => {
                 autoPlay
                 infiniteLoop
                 showStatus={false}
-                showArrows={true}
-                interval={5000} 
+                showArrows={false}
+                interval={6000} 
+                transitionTime={2000} 
                 className="carousel-container"
             >
                 {/* First Slide */}
