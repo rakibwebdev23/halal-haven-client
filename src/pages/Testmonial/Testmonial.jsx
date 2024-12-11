@@ -2,9 +2,9 @@ import { Rating } from "@smastrom/react-rating";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/autoplay'; // Import Swiper CSS for autoplay
+import 'swiper/css/autoplay';
 import '@smastrom/react-rating/style.css';
-import { Navigation, Autoplay } from "swiper/modules"; // Import Autoplay module
+import { Navigation, Autoplay } from "swiper/modules";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import SectionTitle from "../../component/SectionTitle/SectionTitle";
@@ -31,11 +31,11 @@ const Testmonial = () => {
                     rewind={true}
                     navigation={true}
                     autoplay={{
-                        delay: 4000,
+                        delay: 5000,
                         disableOnInteraction: false,
                     }}
                     modules={[Navigation, Autoplay]}
-                    className="mySwiper mt-20"
+                    className="mySwiper mt-16"
                 >
                     {reviews.map((review) => (
                         <SwiperSlide key={review._id}>

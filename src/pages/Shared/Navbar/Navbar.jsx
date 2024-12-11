@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar fixed z-10 text-white bg-black bg-opacity-60 font-poppins">
+        <div className="navbar fixed z-10 text-white bg-black bg-opacity-80 font-poppins py-3 px-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -69,7 +69,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link className="flex items-center gap-2" to="/">
-                    <img className="lg:w-16 w-12 rounded-full" src={logo} alt="" />
+                    <img className="lg:w-14 w-12 rounded-full" src={logo} alt="" />
                     <h2 className="lg:text-2xl text-xl font-bold text-orange-500">Halal Haven.</h2>
                 </Link>
             </div>
@@ -108,7 +108,7 @@ const Navbar = () => {
                 {
                     user ? <>
                         <Link onClick={handleLogOut} className="">Sign Out</Link>
-                        {user.photoURL !== null && <div className="avatar ml-6">
+                        {user.photoURL !== null && <div className="avatar ml-4">
                             <div className="w-12">
                                 <img className="rounded-full" src={user.photoURL} />
 

@@ -3,7 +3,7 @@ import { FaFirefoxBrowser } from "react-icons/fa";
 
 const BannerShared = ({bannerUp, title, description, order}) => {
     return (
-        <div className="min-h-[100%] w-full md:flex mx-auto" style={{ backgroundImage: `url("${imgBack}")` }}>
+        <div className="min-h-screen w-full md:flex mx-auto" style={{ backgroundImage: `url("${imgBack}")` }}>
             <div className="md:flex justify-between items-center gap-6 bg-black bg-opacity-60">
                 <div className="w-1/2 text-left text-white pl-6 space-y-6">
                     <div className="text-6xl font-bold">

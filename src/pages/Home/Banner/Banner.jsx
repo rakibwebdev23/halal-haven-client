@@ -1,88 +1,85 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import img1 from "../../../assets/banner/banner1.png";
-import img3 from "../../../assets/banner/banner3.png";
-import img4 from "../../../assets/banner/banner4.png";
-import img5 from "../../../assets/banner/banner5.jpg";
-import img6 from "../../../assets/banner/banner6.jpg";
+import img1 from "../../../assets/images/bannerShared.jpg";
+import img4 from "../../../assets/images/chicken-barbecue.jpg";
+import img3 from "../../../assets/images/bannerShared2.jpg";
+import img5 from "../../../assets/category/dessert.jpg";
+import img6 from "../../../assets/category/pizza1.jpg";
 import imgBack from "../../../assets/images/bannerBack.jpg";
 import bannerUp from "../../../assets/images/imgRight.png";
 import { FaFirefoxBrowser } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "../Banner/Banner.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsTelephone } from "react-icons/bs";
 
 const Banner = () => {
+    const backgrounds = [imgBack, img1, img3, img4, img5, img6];
+
     return (
-        <div className="min-h-screen w-screen">
+        <div className="relative w-full lg:h-[700px] min-h-screen">
             <Carousel
                 showThumbs={false}
                 autoPlay
                 infiniteLoop
                 showStatus={false}
-                showArrows={true}
-                interval={5000}
-                transitionTime={2000}
-                className="carousel-container"
+                showArrows={false}
+                interval={8000}
+                transitionTime={4000}
+                stopOnHover={true}
+                emulateTouch={true}
+                className="w-full h-full"
             >
-                {/* First Slide */}
-                <div
-                    className="flex items-center justify-center lg:h-[700px] min-h-screen h-[500px] max-w-full"
-                    style={{
-                        backgroundImage: `url("${imgBack}")`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                    }}
-                >
-                    <div className="flex lg:justify-between items-center bg-black bg-opacity-60 lg:px-8 px-4 text-white w-full  lg:min-h-full min-h-screen">
-                        <div className="lg:w-1/2 space-y-6 text-left fade-in-up">
-                            <h2 className="text-5xl lg:text-6xl font-bold leading-tight">
-                                Welcome to <br />
-                                <span className="text-orange-500">Halal Haven</span>
-                            </h2>
-                            <p className="text-justify lg:hyphens-none hyphens-auto break-words leading-relaxed mb-6">
-                                Welcome to Halal Haven, your ultimate destination for fresh, delicious, and 100% halal cuisine. Our menu features a variety of options, including gourmet pizzas, burgers, fresh salads, soups, and indulgent desserts. We pride ourselves on using high-quality ingredients and offering exceptional service. Whether dining in or ordering out, you'll enjoy a flavorful and satisfying experience. Taste the difference at Halal Haven, where every meal is made with care!
-                            </p>
-                            <Link to="/order">
-                                <button className="px-6 py-2 mt-4 text-white border-2 border-transparent bg-orange-600 transition-all duration-300 hover:border-orange-600 hover:bg-transparent hover:text-orange-600">
-                                    Order Now
-                                </button>
-                            </Link>
-                            <div className="flex flex-col md:flex-row justify-between text-slate-400 pt-4 space-y-2 lg:space-y-0">
-                                <p className="flex items-center gap-2">
-                                    <BsTelephone className="text-lg text-orange-500" /> +01307236959
-                                </p>
-                                <p className="flex items-center gap-2">
-                                    <FaFirefoxBrowser className="text-red-500 text-lg" />
-                                    www.halalhaven.com
-                                </p>
-                                <p className="flex items-center gap-2">
-                                    <FaLocationDot className="text-lg text-orange-600" /> Dhaka, Bangladesh
-                                </p>
-                            </div>
-                        </div>
-                        <div className="lg:w-1/2 justify-center mt-8 lg:mt-0 hidden lg:block fade-in-up-delay">
-                            <img
-                                className="w-3/4 max-w-md rounded-full"
-                                src={bannerUp}
-                                alt="Welcome Banner"
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                {/* Other Slides */}
-                {[img1, img3, img4, img5, img6].map((image, index) => (
-                    <div key={index} className="lg:h-[700px] h-[500px] min-h-screen w-screen">
-                        <img
-                            src={image}
-                            alt={`Slide ${index + 1}`}
-                            className="w-full h-full object-cover"
-                        />
-                    </div>
+                {backgrounds.map((bg, index) => (
+                    <div
+                        key={index}
+                        className="w-full min-h-screen lg:h-[700px]"
+                        style={{
+                            backgroundImage: `url(${bg})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                        }}
+                    ></div>
                 ))}
             </Carousel>
+
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center lg:text-left lg:flex-row lg:justify-between px-4 md:px-12 lg:px-16 py-12 text-white bg-black bg-opacity-70">
+                <div className="w-full lg:w-1/2 space-y-6">
+                    <h2 className="text-4xl lg:text-7xl font-extrabold text-orange-500">
+                        <span className="text-yellow-600">Welcome to</span> Halal Haven
+                    </h2>
+                    <p className="text-sm md:text-lg leading-relaxed text-gray-300">
+                        Explore our fresh, delicious, and 100% halal offerings. Whether it's gourmet
+                        pizzas, hearty soups, or sweet desserts, we have something for everyone.
+                        Join us to experience exceptional flavors crafted with love and care.
+                    </p>
+                    <div className="mt-4">
+                        <Link to="/order">
+                            <button className="px-10 py-3 bg-orange-600 text-white font-semibold rounded-full hover:bg-transparent border-2 border-orange-600 hover:text-orange-600 transition-all duration-300">
+                                Order Now
+                            </button>
+                        </Link>
+                    </div>
+                    <div className="flex justify-between lg:justify-start text-sm text-gray-300 gap-8 pt-8">
+                        <p className="flex items-center gap-2">
+                            <BsTelephone className="text-orange-500" /> +01307236959
+                        </p>
+                        <p className="flex items-center gap-2">
+                            <FaFirefoxBrowser className="text-red-500" />
+                            www.halalhaven.com
+                        </p>
+                        <p className="flex items-center gap-2">
+                            <FaLocationDot className="text-orange-500" /> Dhaka, Bangladesh
+                        </p>
+                    </div>
+                </div>
+                <div className="hidden lg:block lg:w-1/2">
+                    <img
+                        src={bannerUp}
+                        alt="Welcome Banner"
+                        className="w-[85%] mx-auto rounded-full drop-shadow-lg"
+                    />
+                </div>
+            </div>
         </div>
     );
 };
