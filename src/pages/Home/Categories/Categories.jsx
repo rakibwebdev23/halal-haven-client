@@ -15,7 +15,7 @@ import img7 from "../../../assets/category/chicken-barbecue.jpg";
 
 const Categories = () => {
     return (
-        <>
+        <div className='lg:pb-10 lg:pt-2'>
             <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
@@ -101,7 +101,7 @@ const Categories = () => {
                     </h2>
                 </SwiperSlide>
             </Swiper>
-        </>
+        </div>
     );
 };
 

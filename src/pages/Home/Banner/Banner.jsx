@@ -42,12 +42,12 @@ const Banner = () => {
                 ))}
             </Carousel>
 
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center lg:text-left lg:flex-row lg:justify-between px-4 md:px-12 lg:px-16 py-12 text-white bg-black bg-opacity-70">
+            <div className="absolute inset-0 flex flex-col justify-center items-center lg:flex-row lg:justify-between px-4 md:px-12 lg:px-16 py-12 text-white bg-black bg-opacity-70 text-justify">
                 <div className="w-full lg:w-1/2 space-y-6">
                     <h2 className="text-4xl lg:text-7xl font-extrabold text-orange-500">
-                        <span className="text-yellow-600">Welcome to</span> Halal Haven
+                        <span className="text-yellow-600">Welcome to</span> <br />Halal Haven
                     </h2>
-                    <p className="text-sm md:text-lg leading-relaxed text-gray-300">
+                    <p className="text-sm md:text-lg leading-relaxed text-gray-300 text-justify hyphens-auto">
                         Explore our fresh, delicious, and 100% halal offerings. Whether it's gourmet
                         pizzas, hearty soups, or sweet desserts, we have something for everyone.
                         Join us to experience exceptional flavors crafted with love and care.
@@ -59,7 +59,7 @@ const Banner = () => {
                             </button>
                         </Link>
                     </div>
-                    <div className="flex justify-between lg:justify-start text-sm text-gray-300 gap-8 pt-8">
+                    <div className="flex flex-col lg:flex-row lg:justify-between text-sm text-gray-300 gap-8 pt-8">
                         <p className="flex items-center gap-2">
                             <BsTelephone className="text-orange-500" /> +01307236959
                         </p>
