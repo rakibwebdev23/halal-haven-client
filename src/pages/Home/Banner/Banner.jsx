@@ -61,14 +61,14 @@ const Banner = () => {
                     </div>
                     <div className="flex flex-col lg:flex-row lg:justify-between text-sm text-gray-300 gap-8 pt-8">
                         <p className="flex items-center gap-2">
-                            <BsTelephone className="text-orange-500" /> +01307236959
+                            <BsTelephone className="text-orange-600" /> +01307236959
                         </p>
                         <p className="flex items-center gap-2">
-                            <FaFirefoxBrowser className="text-red-500" />
+                            <FaFirefoxBrowser className="text-red-600" />
                             www.halalhaven.com
                         </p>
                         <p className="flex items-center gap-2">
-                            <FaLocationDot className="text-orange-500" /> Dhaka, Bangladesh
+                            <FaLocationDot className="text-orange-600" /> Dhaka, Bangladesh
                         </p>
                     </div>
                 </div>
