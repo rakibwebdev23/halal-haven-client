@@ -22,8 +22,8 @@ const Navbar = () => {
             {/* Logo */}
             <div className="navbar-start">
                 <Link className="flex items-center gap-2" to="/">
-                    <img className="w-12 lg:w-14 rounded-full" src={logo} alt="" />
-                    <h2 className="lg:text-2xl text-xl font-bold text-orange-500">Halal Haven.</h2>
+                    <img className="w-8 lg:w-12 rounded-full" src={logo} alt="" />
+                    <h2 className="lg:text-2xl font-bold text-orange-500">Halal Haven.</h2>
                 </Link>
             </div>
 
@@ -33,7 +33,7 @@ const Navbar = () => {
                     <div tabIndex={0} role="button" className="btn btn-ghost">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-10 w-10 text-orange-500"
+                            className="h-6 w-6 text-orange-500"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -47,7 +47,6 @@ const Navbar = () => {
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] shadow-lg bg-white rounded-box w-52 text-black">
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/order">Order</Link></li>
                         <li>
                             <details>
                                 <summary className="cursor-pointer text-black">Our Menu</summary>
@@ -63,6 +62,7 @@ const Navbar = () => {
                                 </ul>
                             </details>
                         </li>
+                        <li><Link to="/order">Order</Link></li>
                         {/* Menu Cart */}
                         {user && isAdmin && <li><Link to="/dashboard/adminHome">
                             <button className="flex items-center gap-2">

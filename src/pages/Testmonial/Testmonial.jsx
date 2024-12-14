@@ -21,7 +21,7 @@ const Testmonial = () => {
     });
 
     return (
-        <div className="lg:my-20 lg:mt-0 mt-12 pt-16">
+        <div className="mt-12 lg:mt-24 md:mt-16 min-h-screen">
             <SectionTitle
                 subTitle="Customer Favorites"
                 title="Hear from Our Happy Diners. See Why They Love Halal Haven!"
@@ -35,18 +35,18 @@ const Testmonial = () => {
                         disableOnInteraction: false,
                     }}
                     modules={[Navigation, Autoplay]}
-                    className="mySwiper mt-16"
+                    className="mySwiper mt-10" 
                 >
                     {reviews.map((review) => (
                         <SwiperSlide key={review._id}>
                             <div className="flex flex-col items-center justify-center space-y-2 lg:text-lg py-10 lg:px-28 lg:text-center text-left leading-relaxed px-14 bg-orange-200">
-                                <h2 className="text-4xl font-bold">{review.name}</h2>
+                                <h2 className="lg:text-4xl text-2xl text-slate-800 font-bold">{review.name}</h2>
                                 <Rating
                                     style={{ maxWidth: 160 }}
                                     value={review.rating}
                                     readOnly
                                 />
-                                <p className="pt-6">{review.details}</p>
+                                <p className="text-slate-800 text-center text-sm lg:text-base leading-relaxed">{review.details}</p>
                                 <img src={review.image} className="mt-6 rounded-full w-24 h-24 bg-black" />
                             </div>
                         </SwiperSlide>

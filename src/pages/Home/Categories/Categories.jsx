@@ -46,17 +46,17 @@ const Categories = () => {
                         src={img2}
                         alt="Dessert"
                     />
-                    <h2 className="lg:text-3xl text-center font-bold text-slate-300 uppercase absolute top-3/4">
+                    <h2 className="lg:text-3xl text-sm text-center font-bold text-slate-300 uppercase absolute top-3/4">
                         Dessert
                     </h2>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img
-                        className="min-h-full hover:bg-orange-500 w-full object-cover transition-all duration-500 ease-in-out transform hover:scale-110 hover:opacity-80"
+                        className="min-h-full hover:bg-orange-500 w-full object-cover transition-all duration-500 ease-in-out transform hover:scale-110 hover:opacity-80 "
                         src={img3}
                         alt="Drink"
                     />
-                    <h2 className="lg:text-3xl text-center font-bold text-slate-300 uppercase absolute top-3/4">
+                    <h2 className="lg:text-3xl text-sm text-center font-bold text-slate-300 uppercase absolute top-3/4 mx-auto justify-center">
                         Drink
                     </h2>
                 </SwiperSlide>
@@ -66,7 +66,7 @@ const Categories = () => {
                         src={img4}
                         alt="Pizza"
                     />
-                    <h2 className="lg:text-3xl text-center font-bold text-slate-300 uppercase absolute top-3/4">
+                    <h2 className="lg:text-3xl text-sm text-center font-bold text-slate-300 uppercase absolute top-3/4 mx-auto justify-center">
                         Pizza
                     </h2>
                 </SwiperSlide>
@@ -76,7 +76,7 @@ const Categories = () => {
                         src={img5}
                         alt="Soup"
                     />
-                    <h2 className="lg:text-3xl text-center font-bold text-slate-300 uppercase absolute top-3/4">
+                    <h2 className="lg:text-3xl text-center font-bold text-slate-300 uppercase absolute top-3/4 text-sm mx-auto justify-center">
                         Soup
                     </h2>
                 </SwiperSlide>
@@ -86,17 +86,17 @@ const Categories = () => {
                         src={img6}
                         alt="Salad"
                     />
-                    <h2 className="lg:text-3xl text-center font-bold text-slate-300 uppercase absolute top-3/4">
+                    <h2 className="lg:text-3xl text-center font-bold text-slate-300 uppercase absolute top-3/4 text-sm mx-auto justify-center">
                         Salad
                     </h2>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img
-                        className="min-h-full hover:bg-orange-500 w-full object-cover transition-all duration-500 ease-in-out transform hover:scale-110 hover:opacity-80"
+                        className="min-h-full hover:bg-orange-500 w-full object-cover transition-all duration-500 ease-in-out transform hover:scale-110 hover:opacity-80 "
                         src={img7}
                         alt="Popular"
                     />
-                    <h2 className="lg:text-3xl text-center font-bold text-slate-300 uppercase absolute top-3/4">
+                    <h2 className="lg:text-3xl text-center font-bold text-slate-300 uppercase absolute top-3/4 text-sm mx-auto justify-center">
                         Popular
                     </h2>
                 </SwiperSlide>
