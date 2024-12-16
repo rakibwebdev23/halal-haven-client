@@ -66,34 +66,34 @@ const Footer = () => {
                         <h6 className="text-white text-lg font-semibold mb-3">Follow Us</h6>
                         <div className="flex gap-4">
                             <a
-                                href="https://facebook.com"
+                                href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-orange-500 transition duration-300"
+                                className="w-10 h-10 flex items-center justify-center bg-orange-600 rounded-full hover:bg-gray-800 transition duration-300"
                             >
                                 <FaFacebookF />
                             </a>
                             <a
-                                href="https://instagram.com"
+                                href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-orange-500 transition duration-300"
+                                className="w-10 h-10 flex items-center justify-center bg-orange-600 rounded-full hover:bg-gray-800 transition duration-300"
                             >
                                 <FaInstagram />
                             </a>
                             <a
-                                href="https://twitter.com"
+                                href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-orange-500 transition duration-300"
+                                className="w-10 h-10 flex items-center justify-center bg-orange-600 rounded-full hover:bg-gray-800 transition duration-300"
                             >
                                 <FaTwitter />
                             </a>
                             <a
-                                href="https://linkedin.com"
+                                href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-orange-500 transition duration-300"
+                                className="w-10 h-10 flex items-center justify-center bg-orange-600 rounded-full hover:bg-gray-800 transition duration-300"
                             >
                                 <FaLinkedinIn />
                             </a>
