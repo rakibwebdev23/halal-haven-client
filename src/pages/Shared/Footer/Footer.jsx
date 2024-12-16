@@ -1,171 +1,112 @@
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import img from "../../../assets/logo/logos.png";
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="bg-gray-900 text-gray-300 p-10 mih-h-screen">
-                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-16">
-                    <div className="flex items-center gap-4">
-                        <img className="w-16 h-16" src={img} alt="Logo" />
-                        <div>
-                            <h2 className="text-xl font-bold text-white">HALAL HAVEN Restaurant</h2>
-                            <p className="text-sm">Providing reliable services since 1992</p>
+        <footer className="bg-gray-900 text-gray-300 mt-20">
+            <div className="container mx-auto px-6 lg:px-16 py-8 lg:py-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                    <div className="flex flex-col items-center md:items-start">
+                        <img className="w-20 h-20 mb-4" src={img} alt="Logo" />
+                        <h2 className="text-xl font-bold text-white">
+                            HALAL HAVEN Restaurant
+                        </h2>
+                        <p className="text-gray-400 text-sm mt-2 leading-relaxed text-center md:text-left">
+                            Savor the taste of quality food and excellent service, since 1992.
+                        </p>
+                    </div>
+
+                    {/* Navigation links */}
+                    <nav className="flex flex-col gap-4 text-center md:text-left">
+                        <h6 className="text-white text-lg font-semibold mb-2">Quick Links</h6>
+                        <ul className="space-y-2">
+                            <li>
+                                <a
+                                    href="/"
+                                    className="hover:text-orange-500 transition duration-300 text-sm"
+                                >
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/menu"
+                                    className="hover:text-orange-500 transition duration-300 text-sm"
+                                >
+                                    Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/about"
+                                    className="hover:text-orange-500 transition duration-300 text-sm"
+                                >
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/contact"
+                                    className="hover:text-orange-500 transition duration-300 text-sm"
+                                >
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/order"
+                                    className="hover:text-orange-500 transition duration-300 text-sm"
+                                >
+                                    Order Now
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div className="flex flex-col items-center md:items-start">
+                        <h6 className="text-white text-lg font-semibold mb-3">Follow Us</h6>
+                        <div className="flex gap-4">
+                            <a
+                                href="https://facebook.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-orange-500 transition duration-300"
+                            >
+                                <FaFacebookF />
+                            </a>
+                            <a
+                                href="https://instagram.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-orange-500 transition duration-300"
+                            >
+                                <FaInstagram />
+                            </a>
+                            <a
+                                href="https://twitter.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-orange-500 transition duration-300"
+                            >
+                                <FaTwitter />
+                            </a>
+                            <a
+                                href="https://linkedin.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-orange-500 transition duration-300"
+                            >
+                                <FaLinkedinIn />
+                            </a>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full lg:w-auto">
-                        <nav>
-                            <h6 className="text-white text-lg font-semibold mb-3">Services</h6>
-                            <ul>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Branding
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Design
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Marketing
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Advertisement
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <nav>
-                            <h6 className="text-white text-lg font-semibold mb-3">Company</h6>
-                            <ul>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        About us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Contact
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Jobs
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Press kit
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <nav>
-                            <h6 className="text-white text-lg font-semibold mb-3">Legal</h6>
-                            <ul>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Terms of use
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Privacy policy
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Cookie policy
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <nav>
-                            <h6 className="text-white text-lg font-semibold mb-3">Quick Links</h6>
-                            <ul>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Menu
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Reservations
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="block text-gray-400 hover:text-white transition-all duration-300"
-                                    >
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
                 </div>
-            </footer>
-            <footer className="bg-gray-800 text-gray-400 py-4 text-center">
-                <p className="text-sm">
-                    Copyright © {new Date().getFullYear()} - All rights reserved by{" "}
-                    <span className="text-white font-semibold">HALAL HAVEN Restaurant</span>
+            </div>
+            <div className="bg-gray-800 py-4 text-center">
+                <p className="text-xs lg:text-sm text-gray-400">
+                    &copy; {new Date().getFullYear()} HALAL HAVEN Restaurant. All rights reserved.
                 </p>
-            </footer>
-        </div>
+            </div>
+        </footer>
     );
 };
 
