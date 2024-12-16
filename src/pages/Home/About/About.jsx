@@ -12,11 +12,11 @@ const About = () => {
                 <img className="w-full h-auto rounded-lg shadow-lg" src={img1} alt="Halal Haven Food" />
             </div>
 
-            {/* Right Content Section */}
+            {/* Right Section */}
             <div className="lg:w-1/2 w-full space-y-6">
                 <div className="uppercase text-center lg:text-left space-y-4">
-                    <p className="text-orange-600 font-bold text-lg">Learn About Halal Haven</p>
-                    <h2 className="text-4xl lg:text-5xl font-semibold text-black leading-tight">
+                    <p className="text-sm lg:text-lg font-semibold text-orange-600 tracking-widest uppercase">Learn About Halal Haven</p>
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
                         High-quality food is essential for good health.
                     </h2>
                 </div>
@@ -31,8 +31,6 @@ const About = () => {
                         </button>
                     </Link>
                 </div>
-
-                {/* Card Section */}
                 <div className="mt-12 lg:flex lg:space-x-8 flex-col lg:flex-row space-y-6 lg:space-y-0">
                     <div className="space-y-4 p-6 shadow-xl rounded-lg shadow-slate-400 text-center lg:text-left">
                         <IoFastFoodOutline className="text-4xl text-orange-600 mx-auto lg:mx-0" />
