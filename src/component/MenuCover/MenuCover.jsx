@@ -11,8 +11,8 @@ const MenuCover = ({ title, description, order, imgUp, imgBack }) => {
                 className="h-full"
             >
                 {/* Overlay */}
-                <div className="h-screen bg-black bg-opacity-60 flex items-center justify-center">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-white px-6 lg:px-12 max-w-7xl mx-auto">
+                <div className="h-screen bg-black bg-opacity-70 flex items-center justify-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-white px-6 lg:px-12 lg:mt-10 max-w-7xl mx-auto">
                         {/* Text Content */}
                         <div className="text-center lg:text-left">
                             <h1 className="text-4xl lg:text-6xl font-bold text-orange-500 mb-4">

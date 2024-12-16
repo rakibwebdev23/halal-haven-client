@@ -67,7 +67,7 @@ const Order = () => {
                 ></SectionTitle>
             </div>
             <div className="flex">
-                <Tabs className="lg:flex w-full mt-20">
+                <Tabs className="lg:flex w-full lg:mt-20 mt-12">
                     <TabList className="flex flex-col lg:w-1/4 space-y-2 font-bold uppercase text-white lg:px-8 px-4">
                         <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Offered Food</Tab>
                         <Tab className="p-4 bg-orange-500 hover:bg-gray-300 cursor-pointer rounded hover:text-black hover:delay-100 duration-300">Popular Food</Tab>
