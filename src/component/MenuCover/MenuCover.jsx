@@ -16,7 +16,7 @@ const MenuCover = ({ title, description, order, imgUp, imgBack }) => {
                         {/* Text Content */}
                         <div className="text-center lg:text-left">
                             <h1 className="text-4xl lg:text-6xl font-bold text-orange-500 mb-4">
-                                Halal Haven <span className="text-white">{title}</span>
+                                Halal Haven <br /> <span className="text-white">{title}</span>
                             </h1>
                             <p className="text-sm lg:text-base text-gray-300 mb-6 leading-relaxed">
                                 {description}
