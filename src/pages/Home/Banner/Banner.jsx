@@ -25,8 +25,8 @@ const Banner = () => {
                 showArrows={false}
                 interval={8000}
                 transitionTime={4000}
-                stopOnHover={true}
-                emulateTouch={true}
+                stopOnHover
+                emulateTouch
                 className="w-full h-full"
             >
                 {backgrounds.map((bg, index) => (
@@ -42,12 +42,14 @@ const Banner = () => {
                 ))}
             </Carousel>
 
-            <div className="absolute inset-0 flex flex-col justify-center items-center lg:flex-row lg:justify-between px-4 md:px-12 lg:px-16 py-12 text-white bg-black bg-opacity-70 text-justify">
-                <div className="w-full lg:w-1/2 space-y-6">
+            {/* Overlay Content */}
+            <div className="absolute inset-0 flex flex-col justify-center items-center lg:flex-row lg:justify-between px-4 md:px-12 lg:px-16 py-12 text-white bg-black bg-opacity-70 text-center lg:text-left">
+                <div className="w-full lg:w-1/2 space-y-6 flex flex-col items-center lg:items-start">
                     <h2 className="text-4xl lg:text-7xl font-extrabold text-orange-500">
-                        <span className="text-yellow-600">Welcome to</span> <br />Halal Haven
+                        <span className="text-yellow-600">Welcome to</span> <br />
+                        Halal Haven
                     </h2>
-                    <p className="text-sm md:text-lg leading-relaxed text-gray-300 text-justify hyphens-auto">
+                    <p className="text-sm md:text-lg leading-relaxed text-gray-300">
                         Explore our fresh, delicious, and 100% halal offerings. Whether it's gourmet
                         pizzas, hearty soups, or sweet desserts, we have something for everyone.
                         Join us to experience exceptional flavors crafted with love and care.
@@ -59,7 +61,7 @@ const Banner = () => {
                             </button>
                         </Link>
                     </div>
-                    <div className="flex flex-col lg:flex-row lg:justify-between text-sm text-gray-300 gap-8 pt-8">
+                    <div className="flex flex-col lg:flex-row justify-center text-left lg:justify-between  gap-4 text-sm text-gray-300 pt-8">
                         <p className="flex items-center gap-2">
                             <BsTelephone className="text-orange-600" /> +01307236959
                         </p>
@@ -72,6 +74,8 @@ const Banner = () => {
                         </p>
                     </div>
                 </div>
+
+                {/* Image Section */}
                 <div className="hidden lg:block lg:w-1/2">
                     <img
                         src={bannerUp}
