@@ -14,28 +14,27 @@ const SocialSign = () => {
                 const userInfo = {
                     name: result.user?.displayName,
                     email: result.user?.email
-                }
-                                
+                };
+                
                 axiosPublic.post('/users', userInfo)
-                    .then(res => {   
-                        // console.log(res.data);            
+                    .then(res => {
                         if (res.data) {
-                        navigate('/')
-                    }
-                })
+                            navigate('/');
+                        }
+                    });
             })
-            .catch(error => console.log(error)
-            )
+            .catch(error => console.log(error));
     };
 
     return (
-        <div>
-            <div className="text-center mt-2 w-full">
-                <button onClick={handleGoogleSignUser} className="btn  text-white btn-outline border hover:bg-orange-600 border-orange-600 w-full">
-                    <FaGoogle className="text-blue-600 text-xl"></FaGoogle>
-                    Google
-                </button>
-            </div>
+        <div className="mt-6 text-center">
+            <button 
+                onClick={handleGoogleSignUser} 
+                className="flex items-center justify-center bg-white text-gray-800 hover:bg-orange-600 hover:text-white border-2 border-orange-600 w-full py-3 rounded-lg transition-all duration-300"
+            >
+                <FaGoogle className="text-xl mr-3 text-blue-600" />
+                <span className="font-semibold">Sign with Google</span>
+            </button>
         </div>
     );
 };
