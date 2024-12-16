@@ -20,8 +20,8 @@ const About = () => {
                 <div className="lg:pt-4 pt-2">
                     <p className="lg:space-y-2 lg:text-justify text-left leading-relaxed text-black">"Halal Haven" is a cozy and welcoming restaurant that caters to those who value high-quality, halal-certified cuisine. Our menu is a fusion of flavors from around the world, offering a diverse range of dishes that meet the highest standards of halal preparation. From savory grilled meats to fresh salads, mouth-watering desserts, and refreshing drinks, every item on our menu is crafted with care and respect for halal traditions.</p>
                     <div className="lg:mt-10 mt-6">
-                        <Link to="/menuPopular"> <button className="relative px-8 py-3 border-2 border-transparent bg-yellow-500 transition-all duration-300 hover:border-orange-600 hover:bg-transparent hover:text-orange-600 font-bold flex justify-center items-center">
-                            Explore Popular Menu <MdKeyboardDoubleArrowRight className="text-2xl font-bold"></MdKeyboardDoubleArrowRight>
+                        <Link to="/menuPopular"> <button className="relative px-8 py-3 border-2 border-transparent bg-yellow-500 transition-all duration-300 hover:border-orange-600 hover:bg-transparent hover:text-orange-600 font-bold flex justify-center items-center text-black">
+                            Explore Popular Menu <MdKeyboardDoubleArrowRight className="lg:text-2xl font-bold"></MdKeyboardDoubleArrowRight>
                         </button></Link>
                     </div>
                     <div className="mt-10 lg:flex justify-between">
