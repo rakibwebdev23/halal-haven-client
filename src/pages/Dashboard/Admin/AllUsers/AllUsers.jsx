@@ -71,12 +71,11 @@ const AllUsers = () => {
     }
 
     return (
-        <div>
-            <h2 className="text-4xl font-bold">Total Users: {users.length}</h2>
+        <div className="lg:mt-0 mt-8">
+            <h2 className="lg:text-4xl text-2xl font-bold text-center">Total Users: {users.length}</h2>
 
-            <div className="overflow-x-auto w-full mt-14">
+            <div className="overflow-x-auto w-full lg:mt-10 mt-6">
                 <table className="table">
-                    {/* head */}
                     <thead>
                         <tr className="lg:text-xl font-bold bg-orange-400">
                             <th>#</th>
@@ -92,8 +91,8 @@ const AllUsers = () => {
                                 <tr key={user._id}
                                     className="bg-gray-300"
                                 >
-                                    <td className="font-bold">{index + 1}</td>
-                                    <td className="font-bold">{user.name}</td>
+                                    <td className="font-bold lg:text-base text-sm">{index + 1}</td>
+                                    <td className="font-bold lg:text-base text-sm">{user.name}</td>
                                     <td>{user.email}</td>
                                     <td>
                                         {user.role === 'admin' ? 'Admin' : <button onClick={() => handleMakeAdmin(user)} className="btn bg-orange-500 text-white text-xl btn-md font-bold hover:text-orange-500"><FaUsers></FaUsers></button>}

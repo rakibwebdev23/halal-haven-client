@@ -39,9 +39,9 @@ const ManageItems = () => {
     return (
         <div>
             <SectionTitle title="Manage all items" subTitle="show all items"></SectionTitle>
-            <h1 className="text-4xl font-bold mt-16 mb-6">Total Items: {menu.length}</h1>
+            <h1 className="lg:text-4xl text-2xl font-bold mt-6 text-center">Total Items: {menu.length}</h1>
             <div className="overflow-x-auto">
-                <table className="table">
+                <table className="table mt-4">
                     {/* head */}
                     <thead className="bg-orange-400 lg:text-lg font-bold">
                         <tr>
@@ -72,10 +72,10 @@ const ManageItems = () => {
                                         </div>
                                     </div>
                                 </td>
-                                <td className="font-bold">
+                                <td className="font-bold lg:text-base text-sm">
                                     {item.name}
                                 </td>
-                                <td>$ {item.price}</td>
+                                <td className="font-bold text-sm lg:text-base">$ {item.price}</td>
                                 <td>
                                     <Link to={`/dashboard/updateItem/${item._id}`}>
                                         <button className="btn bg-orange-400 text-white text-xl btn-md font-bold hover:text-orange-500"><FaEdit></FaEdit></button>

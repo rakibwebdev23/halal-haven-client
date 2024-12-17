@@ -21,7 +21,7 @@ const AddItems = () => {
                 "Content-Type": "multipart/form-data"
             }
         });
-        // console.log(res.data);
+
         if (res.data.success) {
             const menuItem = {
                 name: data.name,
@@ -29,7 +29,7 @@ const AddItems = () => {
                 recipe: data.recipe,
                 price: parseFloat(data.price),
                 image: res.data.data.display_url
-            }
+            };
             const menuRes = await axiosSecure.post("/menu", menuItem);
 
             if (menuRes.data.insertedId) {
@@ -37,71 +37,87 @@ const AddItems = () => {
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: `${data.name} is an addeded`,
+                    title: `${data.name} has been added successfully!`,
                     showConfirmButton: false,
                     timer: 1500
                 });
             }
         }
-    }
+    };
 
     return (
-        <div>
-            <HelmetShare caption="Add Items"></HelmetShare>
-            <SectionTitle title="Add an item" subTitle="new item added"></SectionTitle>
-            <div className="card w-full shrink-0 shadow-2xl mt-10">
-                <form onSubmit={handleSubmit(onSubmit)} className="card-body space-y-4 bg-slate-200">
-                    <div className="form-control">
-                        <label className="label">
-                            <span className="label-text font-bold">Recipe name*</span>
-                        </label>
-                        <input type="text" placeholder="Name" className="input input-bordered" {...register("name", { required: true })} />
-                        {errors.name?.type === "required" && (
-                            <p className="text-red-600">Recipe name is required</p>
-                        )}
-                    </div>
-                    <div className="lg:flex items-center w-full gap-4">
-                        {/* category field */}
-                        <div className="form-control w-full">
-                            <label className="label">
-                                <span className="label-text font-bold">Category*</span>
-                            </label>
-                            <select defaultValue="default" className="select select-bordered w-full" {...register("category", { required: true })}>
-                                <option disabled value="default">All Category</option>
-                                <option value="offered">Offered Food</option>
-                                <option value="popular">Popular Food</option>
-                                <option value="pizza">Pizza</option>
-                                <option value="burger">Burger</option>
-                                <option value="dessert">Dessert</option>
-                                <option value="soup">Soup</option>
-                                <option value="salad">Salad</option>
-                                <option value="drinks">Drinks</option>
-                            </select>
+        <div className="min-h-screen bg-gray-100 p-4 md:p-10">
+            <HelmetShare caption="Add Items" />
+            <SectionTitle title="Add a New Menu Item" subTitle="Introduce something delicious!" />
+            
+            <div className="max-w-4xl mx-auto">
+                <div className="card bg-white shadow-lg rounded-lg p-6 md:p-10">
+                    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                        <div>
+                            <label className="block text-gray-700 font-semibold mb-2">Recipe Name*</label>
+                            <input
+                                type="text"
+                                placeholder="Enter Recipe Name"
+                                className="input input-bordered w-full"
+                                {...register("name", { required: true })}
+                            />
+                            {errors.name && <p className="text-red-500 text-sm mt-1">Recipe name is required</p>}
                         </div>
-                        {/* price field */}
-                        <div className="form-control w-full">
-                            <label className="label">
-                                <span className="label-text font-bold">Price*</span>
-                            </label>
-                            <input type="number" placeholder="Price" className="input input-bordered" {...register("price", { required: true })} />
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label className="block text-gray-700 font-semibold mb-2">Category*</label>
+                                <select
+                                    defaultValue="default"
+                                    className="select select-bordered w-full"
+                                    {...register("category", { required: true })}
+                                >
+                                    <option disabled value="default">Select Category</option>
+                                    <option value="offered">Offered Food</option>
+                                    <option value="popular">Popular Food</option>
+                                    <option value="pizza">Pizza</option>
+                                    <option value="burger">Burger</option>
+                                    <option value="dessert">Dessert</option>
+                                    <option value="soup">Soup</option>
+                                    <option value="salad">Salad</option>
+                                    <option value="drinks">Drinks</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="block text-gray-700 font-semibold mb-2">Price*</label>
+                                <input
+                                    type="number"
+                                    placeholder="Enter Price"
+                                    className="input input-bordered w-full"
+                                    {...register("price", { required: true })}
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div className="form-control w-full">
-                        <div className="label">
-                            <span className="label-text font-bold">Recipe Details*</span>
+                        <div>
+                            <label className="block text-gray-700 font-semibold mb-2">Recipe Details*</label>
+                            <textarea
+                                placeholder="Write Recipe Details..."
+                                className="textarea textarea-bordered w-full h-24"
+                                {...register("recipe", { required: true })}
+                            ></textarea>
                         </div>
-                        <textarea className="textarea textarea-bordered h-24" placeholder="Recipe Details" {...register("recipe", { required: true })}></textarea>
-                    </div>
-                    <div className="form-control">
-                        <input type="file" className="file-input file-input-bordered w-full max-w-xs" {...register("image", { required: true })} />
-                    </div>
-                    <div>
-                        <button className="relative px-8 py-3 border-2 border-transparent bg-gray-700 transition-all duration-300 hover:border-gray-600 text-white hover:bg-transparent hover:text-gray-700 font-bold
-                         flex justify-center items-center gap-2 rounded-l-lg">
-                            Add Item <FaUtensils></FaUtensils>
-                        </button>
-                    </div>
-                </form>
+                        <div>
+                            <label className="block text-gray-700 font-semibold mb-2">Image*</label>
+                            <input
+                                type="file"
+                                className="file-input file-input-bordered w-full"
+                                {...register("image", { required: true })}
+                            />
+                        </div>
+                        <div className="flex justify-end">
+                            <button
+                                type="submit"
+                                className="flex items-center gap-2 bg-blue-600 text-white font-bold px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300"
+                            >
+                                Add Item <FaUtensils />
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     );
