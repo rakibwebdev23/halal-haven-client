@@ -1,5 +1,4 @@
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import img1 from "../../../assets/images/aboutFood.jpg";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { PiChefHatBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
@@ -9,7 +8,7 @@ const About = () => {
         <div className="lg:flex lg:justify-between lg:space-x-16 my-24 text-justify font-poppins px-4 lg:px-8">
             {/* Left Section */}
             <div className="lg:w-1/2 w-full mb-8 lg:mb-0">
-                <img className="w-full h-auto rounded-lg shadow-lg" src={img1} alt="Halal Haven Food" />
+                <img className="w-full h-auto rounded-lg shadow-lg" src="https://i.ibb.co/tQkPHKJ/about-Food.jpg" alt="Halal Haven Food" />
             </div>
 
             {/* Right Section */}

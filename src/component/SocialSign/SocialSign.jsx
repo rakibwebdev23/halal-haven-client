@@ -33,7 +33,7 @@ const SocialSign = () => {
                 className="flex items-center justify-center bg-white text-gray-800 hover:bg-orange-600 hover:text-white border-2 border-orange-600 w-full py-3 rounded-lg transition-all duration-300"
             >
                 <FaGoogle className="text-xl mr-3 text-blue-600" />
-                <span className="font-semibold">Sign with Google</span>
+                <span className="font-semibold">Continue with Google</span>
             </button>
         </div>
     );

@@ -2,7 +2,7 @@ import MenuData from "../../../component/MenuData/MenuData";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import OrderFood from "../OrderFood/OrderFood";
-import img from "../../../assets/cover/cover2.jpg";
+// import img from "../../../assets/cover/cover2.jpg";
 import { Link } from "react-router-dom";
 import SectionTitle from "../../../component/SectionTitle/SectionTitle";
 import HelmetShare from "../../../component/HelmetShare/HelmetShare";
@@ -31,7 +31,7 @@ const Order = () => {
             <div
                 className="hero h-[500px]"
                 style={{
-                    backgroundImage: `url(${img})`
+                    backgroundImage: `url('https://i.ibb.co.com/HqZkhW6/cover2.jpg')`,
                 }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">

@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import img from "../../../assets/logo/logos.png";
+import logo from "../../../assets/logo/logos.png";
 
 const Footer = () => {
     return (
@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container mx-auto px-6 lg:px-16 py-8 lg:py-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                     <div className="flex flex-col items-center md:items-start">
-                        <img className="w-20 h-20 mb-4" src={img} alt="Logo" />
+                        <img className="w-20 h-20 mb-4" src={logo} alt="Logo" />
                         <h2 className="text-xl font-bold text-white">
                             HALAL HAVEN Restaurant
                         </h2>
@@ -30,7 +30,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href="/menu"
+                                    href="/menuPopular"
                                     className="hover:text-orange-500 transition duration-300 text-sm"
                                 >
                                     Menu
@@ -38,7 +38,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href="/about"
+                                    href="/"
                                     className="hover:text-orange-500 transition duration-300 text-sm"
                                 >
                                     About Us
@@ -69,7 +69,7 @@ const Footer = () => {
                                 href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 flex items-center justify-center bg-orange-600 rounded-full hover:bg-gray-800 transition duration-300"
+                                className="w-10 h-10 flex items-center justify-center hover:bg-orange-600 rounded-xl text-white bg-gray-800 border border-orange-500 transition duration-300"
                             >
                                 <FaFacebookF />
                             </a>
@@ -77,7 +77,7 @@ const Footer = () => {
                                 href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 flex items-center justify-center bg-orange-600 rounded-full hover:bg-gray-800 transition duration-300"
+                                className="w-10 h-10 flex items-center justify-center hover:bg-orange-600 rounded-xl text-white bg-gray-800 border border-orange-500 transition duration-300"
                             >
                                 <FaInstagram />
                             </a>
@@ -85,7 +85,7 @@ const Footer = () => {
                                 href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 flex items-center justify-center bg-orange-600 rounded-full hover:bg-gray-800 transition duration-300"
+                                className="w-10 h-10 flex items-center justify-center hover:bg-orange-600 rounded-xl text-white bg-gray-800 border border-orange-500 transition duration-300"
                             >
                                 <FaTwitter />
                             </a>
@@ -93,7 +93,7 @@ const Footer = () => {
                                 href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 flex items-center justify-center bg-orange-600 rounded-full hover:bg-gray-800 transition duration-300"
+                                className="w-10 h-10 flex items-center justify-center hover:bg-orange-600 rounded-xl bg-gray-800 border border-orange-500 transition duration-300 text-white"
                             >
                                 <FaLinkedinIn />
                             </a>
