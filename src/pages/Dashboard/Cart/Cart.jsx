@@ -10,7 +10,7 @@ const Cart = () => {
 
     return (
         <div>
-            <div className="text-4xl font-bold lg:flex justify-evenly items-center space-y-4 lg:space-y-0">
+            <div className="lg:text-4xl text-2xl font-bold lg:flex lg:justify-evenly text-center items-center space-y-4 lg:space-y-0">
                 <h2>Total Items: {cart.length}</h2>
                 <h2>Total Price:$ {totalPrice}</h2>
                 {

@@ -18,9 +18,9 @@ const PaymentHistory = () => {
     return (
         <div>
             <SectionTitle title="Payment History" subTitle="at a glance"></SectionTitle>
-            <h1 className="mt-10 text-4xl font-bold">Total Payments: {payments.length}</h1>
+            <h1 className="mt-10 lg:text-4xl text-2xl font-bold">Total Payments: {payments.length}</h1>
             <div className="overflow-x-auto mt-10">
-                <table className="table">
+                <table className="table max-w-full">
                     {/* head */}
                     <thead className="bg-orange-400 lg:text-xl font-bold">
                         <tr>
@@ -38,8 +38,8 @@ const PaymentHistory = () => {
                                 key={payment._id}>
                                 <td className="font-bold">{ index + 1}</td>
                                 <td>{ payment.email}</td>
-                                <td>{ payment.transactionId}</td>
-                                <td>$ { payment.price}</td>
+                                <td className="text-sm">{ payment.transactionId}</td>
+                                <td className="font-bold text-sm">$ { payment.price}</td>
                                 <td className="text-green-600">{ payment.status}......</td>
                             </tr>)
                         }

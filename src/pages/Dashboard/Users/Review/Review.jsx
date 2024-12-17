@@ -49,7 +49,7 @@ const Review = () => {
 
     return (
         <div>
-            <SectionTitle title="please give me your Feedback" subTitle="please add your comment"></SectionTitle>
+            <SectionTitle title="Please give me your Feedback" subTitle="please add your comment"></SectionTitle>
             <div className="card w-full shrink-0 shadow-2xl mt-10">
                 <form onSubmit={handleSubmit(onSubmit)} className="card-body space-y-4 bg-slate-200">
                     <div className="form-control">

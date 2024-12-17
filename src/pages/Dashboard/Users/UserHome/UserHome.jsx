@@ -22,8 +22,8 @@ const UserHome = () => {
     return (
         <div>
             <HelmetShare caption="Dashboard"></HelmetShare>
-            <h1 className="text-3xl font-semibold">Hi, Welcome to <span className="text-orange-500">{user.displayName}</span></h1>
-            <div className="shadow-transparent mt-10 w-full stats flex flex-col lg:flex-row">
+            <h1 className="md:text-2xl lg:text-4xl text-xl font-bold font-poppins text-center text-slate-800">Hi, Welcome to <br /> <span className="text-orange-600 text-3xl lg:text-5xl">{user.displayName}</span></h1>
+            <div className="shadow-transparent mt-10 w-full stats flex flex-col lg:flex-row p-2">
                 <div className="stat bg-orange-400">
                     <div className="stat-figure text-white">
                         <FaDollarSign className="text-4xl"></FaDollarSign>
@@ -56,12 +56,12 @@ const UserHome = () => {
                         <h2 className="text-2xl font-bold mt-2">{ user.displayName}</h2>
                     </div>}
                 </div>
-                <div className="divider lg:divider-horizontal divider-warning lg:h-[300px]"></div>
+                <div className="divider lg:divider-horizontal divider-warning"></div>
                 <div className="lg:w-1/2 lg:p-10">
-                    <h2 className="text-4xl font-bold mb-6">Your Activities</h2>
-                    <p className="text-xl font-bold text-green-500 flex items-center gap-1 mb-2"><span className="text-orange-600"><FaCartPlus></FaCartPlus></span> Orders: {stats.length}</p>
-                    <p className="text-xl font-bold text-red-600 flex items-center gap-1"><span className="text-black"><FaCcMastercard></FaCcMastercard></span>Payment: { stats.length}</p>
-                    <p className="text-xl font-bold text-orange-600 flex items-center gap-1 mt-2"><span className="text-black"><FaDollarSign></FaDollarSign></span>Payment:$ {totalOrder}</p>
+                    <h2 className="lg:text-4xl text-2xl font-bold mb-6">Your Activities</h2>
+                    <p className="lg:text-xl text-lg font-bold text-green-500 flex items-center gap-1 mb-2"><span className="text-orange-600"><FaCartPlus></FaCartPlus></span> Orders: {stats.length}</p>
+                    <p className="lg:text-xl text-lg font-bold text-red-600 flex items-center gap-1"><span className="text-black"><FaCcMastercard></FaCcMastercard></span>Payment: { stats.length}</p>
+                    <p className="lg:text-xl text-lg font-bold text-orange-600 flex items-center gap-1 mt-2"><span className="text-black"><FaDollarSign></FaDollarSign></span>Payment:$ {totalOrder}</p>
                 </div>
             </div>
         </div>

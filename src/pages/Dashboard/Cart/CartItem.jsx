@@ -36,12 +36,12 @@ const CartItem = ({ item, index }) => {
     }
 
     return (
-        <tr className="w-full bg-gray-300">
+        <tr className="max-w-full bg-gray-300 text-slate-800">
             <td>{index + 1}</td>
             <td>
                 <div className="flex items-center gap-3">
                     <div className="avatar">
-                        <div className="mask mask-squircle h-12 w-12">
+                        <div className="mask mask-squircle lg:h-12 h-10 w-10 lg:w-12">
                             <img
                                 src={image}
                                 alt="Avatar Tailwind CSS Component" />
@@ -50,12 +50,12 @@ const CartItem = ({ item, index }) => {
 
                 </div>
             </td>
-            <td className="text-xl font-bold">
+            <td className="lg:text-xl font-bold">
                 {name}
             </td>
-            <td className="font-bold"><span className="text-orange-600">$</span> {price}</td>
+            <td className="font-bold lg:text-base text-sm"><span className="text-orange-600">$</span> {price}</td>
             <td>
-                <button onClick={() => handleDelete(_id)} className="btn btn-ghost btn-lg text-red-600 font-bold"><RiDeleteBin6Line></RiDeleteBin6Line></button>
+                <button onClick={() => handleDelete(_id)} className="btn btn-ghost lg:btn-lg text-red-600 font-bold"><RiDeleteBin6Line></RiDeleteBin6Line></button>
             </td>
         </tr>
     );
