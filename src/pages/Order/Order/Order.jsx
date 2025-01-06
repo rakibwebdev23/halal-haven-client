@@ -91,7 +91,7 @@ const Order = () => {
                     title="Explore Our Menu"
                 />
             </div>
-            <div className="container mx-auto px-4 lg:flex lg:pt-10 pt-4">
+            <div className="container mx-auto px-8 lg:flex lg:pt-10 pt-4">
                 <Tabs className="w-full lg:flex">
                     <TabList className="lg:w-1/4 space-y-3 text-lg font-semibold uppercase">
                         <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">

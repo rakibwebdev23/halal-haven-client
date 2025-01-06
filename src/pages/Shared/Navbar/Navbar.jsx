@@ -38,7 +38,7 @@ const Navbar = () => {
 
       {/* Mobile Navbar */}
       <div className="navbar-end lg:hidden">
-        <button onClick={toggleMenu} className="btn btn-ghost text-orange-500">
+        <button onClick={toggleMenu} className="btn btn-ghost text-white bg-orange-600">
           {menuOpen ? (
             <MdClose className="text-2xl" />
           ) : (
