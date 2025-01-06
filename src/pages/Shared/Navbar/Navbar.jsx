@@ -59,7 +59,7 @@ const Navbar = () => {
                 <summary className="cursor-pointer hover:text-orange-500">
                   Our Menu
                 </summary>
-                <ul className="p-2 bg-gray-100 rounded">
+                <ul className="p-2 bg-gray-100 z-50 rounded">
                   <li><Link to="/menuOffered" onClick={toggleMenu}>Offered</Link></li>
                   <li><Link to="/menuPopular" onClick={toggleMenu}>Popular</Link></li>
                   <li><Link to="/menuPizza" onClick={toggleMenu}>Pizza</Link></li>
@@ -130,7 +130,7 @@ const Navbar = () => {
               <span>Our Menu</span>
               <MdKeyboardArrowDown className="text-lg group-hover:rotate-180 transition-transform duration-300" />
             </div>
-            <ul className="absolute hidden group-hover:flex flex-col bg-white text-black mt-2 p-4 rounded shadow-lg w-40 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+            <ul className="absolute hidden z-50 group-hover:flex flex-col bg-white text-black lg:mt-8 mt-2 p-4 rounded shadow-lg w-40 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
               <li><Link to="/menuOffered" className="hover:bg-orange-300 p-2 rounded transition-all duration-300">Offered</Link></li>
               <li><Link to="/menuPopular" className="hover:bg-orange-300 p-2 rounded transition-all duration-300">Popular</Link></li>
               <li><Link to="/menuPizza" className="hover:bg-orange-300 p-2 rounded transition-all duration-300">Pizza</Link></li>

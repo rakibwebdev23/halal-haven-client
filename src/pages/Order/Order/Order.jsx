@@ -47,7 +47,7 @@ const Order = () => {
                 }}
             >
                 <div className="hero-overlay bg-black bg-opacity-50 absolute inset-0"></div>
-                <div className="hero-content text-center text-white z-10">
+                <div className="hero-content text-center text-white">
                     <div className="max-w-lg mx-auto">
                         <div className="mb-4">
                             <Link className="text-orange-400 hover:underline mr-2" to="/">
