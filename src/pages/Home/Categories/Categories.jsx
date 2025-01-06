@@ -24,7 +24,7 @@ const Categories = () => {
     ];
 
     return (
-        <div className="py-14 bg-gray-50 px-4 lg:px-12">
+        <div className="py-10 bg-gray-50 px-4 lg:px-12">
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-12 uppercase">
                 Explore Our Categories
             </h2>

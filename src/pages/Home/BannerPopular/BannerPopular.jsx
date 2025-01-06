@@ -1,9 +1,9 @@
-import imgBack from "../../../assets/images/chef-service.jpg"
+import imgBack from "../../../assets/cover/cover3.jpg"
 
 const BannerPopular = () => {
     return (
         <div
-            className="bistro bg-fixed hero lg:h-[700px] h-1/2 my-28" style={{ backgroundImage: `url("${imgBack}")` }}>
+            className="bistro bg-fixed hero min-h-screen h-1/2 my-28" style={{ backgroundImage: `url("${imgBack}")` }}>
             <div className="hero-content text-center lg:px-20 p-6 bg-black bg-opacity-50 min-h-full max-w-full">
                 <div className="lg:h-[300px] text-white bg-black bg-opacity-70 flex items-center">
                     <div className='lg:px-24 py-10 lg:py-0'>

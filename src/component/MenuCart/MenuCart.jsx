@@ -2,8 +2,8 @@ const MenuCart = ({ item }) => {
     const { name, recipe, price, image } = item;
 
     return (
-        <div className="group relative flex flex-col lg:flex-row items-center gap-6 p-6 rounded-xl shadow-md bg-white overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-[1.02]">
-            <div className="w-full lg:w-40 lg:h-40 h-56 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-105 group-hover:brightness-110">
+        <div className="group relative flex flex-col lg:flex-row items-center gap-6 p-6 rounded-xl shadow-md bg-white overflow-hidden transition-transform duration-300 hover:shadow-lg">
+            <div className="w-full lg:w-40 h-56 lg:h-40 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-105 group-hover:brightness-110">
                 <img
                     src={image}
                     alt={name}
@@ -22,6 +22,8 @@ const MenuCart = ({ item }) => {
                 <span className="text-3xl mr-1">$</span>
                 <span>{price}</span>
             </div>
+
+            {/* Hover Overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-transparent to-orange-100 opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
         </div>
     );
