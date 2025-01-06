@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar fixed z-10 bg-black bg-opacity-80 text-white font-poppins max-w-screen-xl mx-auto py-3 px-4">
+    <div className="navbar fixed z-10 bg-black bg-opacity-80 text-white font-poppins max-w-screen-xl mx-auto py-4 px-4">
       <div className="navbar-start">
         <Link to="/" className="flex items-center gap-2">
           <img

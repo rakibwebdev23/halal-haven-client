@@ -39,7 +39,6 @@ const Testimonial = () => {
 
   return (
     <div className="mt-20 lg:mt-24 px-6 lg:px-12">
-      {/* Section Title */}
       <SectionTitle
         subTitle="Our Happy Diners"
         title="What People Are Saying About Us"
@@ -68,25 +67,20 @@ const Testimonial = () => {
             {reviews.map((review) => (
               <SwiperSlide key={review._id}>
                 <div className="bg-white border border-gray-200 shadow-md hover:shadow-xl rounded-lg p-8 flex flex-col items-center text-center transition-all duration-300">
-                  {/* User Image */}
                   <div className="relative mb-6">
                     <img
                       src={review.image}
                       alt={review.name}
-                      loading="lazy" // Lazy loading for better performance
+                      loading="lazy"
                       className="w-24 h-24 object-cover rounded-full border-4 border-orange-500 shadow-md"
                     />
                     <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-2 py-1 text-sm rounded-full shadow-lg">
                       ★ {review.rating}
                     </span>
                   </div>
-
-                  {/* User Name */}
                   <h3 className="text-lg lg:text-xl font-semibold text-gray-800 mb-2">
                     {review.name}
                   </h3>
-
-                  {/* Review Details */}
                   <p className="text-gray-600 italic mb-4 leading-relaxed">
                     "{review.details}"
                   </p>
