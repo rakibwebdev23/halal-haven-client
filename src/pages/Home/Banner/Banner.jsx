@@ -17,30 +17,29 @@ const Banner = () => {
 
     return (
         <div className="relative w-full lg:h-[700px] min-h-screen">
-            <Carousel
-                showThumbs={false}
-                autoPlay
-                infiniteLoop
-                showStatus={false}
-                showArrows={false}
-                interval={8000}
-                transitionTime={4000}
-                stopOnHover
-                emulateTouch
-                className="w-full h-full"
+            <div
             >
-                {backgrounds.map((bg, index) => (
-                    <div
-                        key={index}
-                        className="w-full min-h-screen lg:h-[700px]"
-                        style={{
-                            backgroundImage: `url(${bg})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                        }}
-                    ></div>
-                ))}
-            </Carousel>
+                <Carousel
+                    showThumbs={false}
+                    infiniteLoop
+                    showArrows={false}
+                    interval={5000}
+                    transitionTime={1000}
+                    className="w-full h-full"
+                >
+                    {backgrounds.map((bg, index) => (
+                        <div
+                            key={index}
+                            className="w-full min-h-screen lg:h-[700px]"
+                            style={{
+                                backgroundImage: `url(${bg})`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                            }}
+                        ></div>
+                    ))}
+                </Carousel>
+            </div>
 
             {/* Overlay Content */}
             <div className="absolute inset-0 flex flex-col justify-center items-center lg:flex-row lg:justify-between px-4 md:px-12 lg:px-16 py-12 text-white bg-black bg-opacity-70 text-center lg:text-left">
