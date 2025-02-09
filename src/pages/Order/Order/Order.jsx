@@ -10,6 +10,7 @@ import SectionTitle from "../../../component/SectionTitle/SectionTitle";
 import HelmetShare from "../../../component/HelmetShare/HelmetShare";
 import useAuth from "../../../hooks/useAuth";
 import useAdmin from "../../../hooks/useAdmin";
+import Container from "../../../component/Container/Container";
 
 const Order = () => {
     const [
@@ -85,68 +86,70 @@ const Order = () => {
                     </div>
                 </div>
             </div>
-            <div className="my-12 text-center">
-                <SectionTitle
-                    subTitle="A summary of the items you've chosen"
-                    title="Explore Our Menu"
-                />
-            </div>
-            <div className="container mx-auto px-8 lg:flex lg:pt-10 pt-4">
-                <Tabs className="w-full lg:flex">
-                    <TabList className="lg:w-1/4 space-y-3 text-lg font-semibold uppercase">
-                        <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
-                            Offered Food
-                        </Tab>
-                        <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
-                            Popular Food
-                        </Tab>
-                        <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
-                            Pizza
-                        </Tab>
-                        <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
-                            Burger
-                        </Tab>
-                        <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
-                            Dessert
-                        </Tab>
-                        <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
-                            Soup
-                        </Tab>
-                        <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
-                            Salad
-                        </Tab>
-                        <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
-                            Drinks
-                        </Tab>
-                    </TabList>
-                    <div className="lg:w-3/4 mt-8 lg:mt-0 lg:ml-8">
-                        <TabPanel>
-                            <OrderFood items={filterItems(offeredItem)} />
-                        </TabPanel>
-                        <TabPanel>
-                            <OrderFood items={filterItems(popularItem)} />
-                        </TabPanel>
-                        <TabPanel>
-                            <OrderFood items={filterItems(pizzaItem)} />
-                        </TabPanel>
-                        <TabPanel>
-                            <OrderFood items={filterItems(burgerItem)} />
-                        </TabPanel>
-                        <TabPanel>
-                            <OrderFood items={filterItems(dessertItem)} />
-                        </TabPanel>
-                        <TabPanel>
-                            <OrderFood items={filterItems(soupItem)} />
-                        </TabPanel>
-                        <TabPanel>
-                            <OrderFood items={filterItems(saladItem)} />
-                        </TabPanel>
-                        <TabPanel>
-                            <OrderFood items={filterItems(drinkItem)} />
-                        </TabPanel>
-                    </div>
-                </Tabs>
-            </div>
+            <Container>
+                <div className="my-12 text-center">
+                    <SectionTitle
+                        subTitle="A summary of the items you've chosen"
+                        title="Explore Our Menu"
+                    />
+                </div>
+                <div className="container mx-auto lg:flex lg:pt-10 pt-4">
+                    <Tabs className="w-full lg:flex">
+                        <TabList className="lg:w-1/4 space-y-3 text-lg font-semibold uppercase">
+                            <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
+                                Offered Food
+                            </Tab>
+                            <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
+                                Popular Food
+                            </Tab>
+                            <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
+                                Pizza
+                            </Tab>
+                            <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
+                                Burger
+                            </Tab>
+                            <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
+                                Dessert
+                            </Tab>
+                            <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
+                                Soup
+                            </Tab>
+                            <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
+                                Salad
+                            </Tab>
+                            <Tab className="p-3 bg-orange-400 rounded-md text-white hover:bg-orange-600 transition cursor-pointer">
+                                Drinks
+                            </Tab>
+                        </TabList>
+                        <div className="lg:w-3/4 mt-8 lg:mt-0 lg:ml-8">
+                            <TabPanel>
+                                <OrderFood items={filterItems(offeredItem)} />
+                            </TabPanel>
+                            <TabPanel>
+                                <OrderFood items={filterItems(popularItem)} />
+                            </TabPanel>
+                            <TabPanel>
+                                <OrderFood items={filterItems(pizzaItem)} />
+                            </TabPanel>
+                            <TabPanel>
+                                <OrderFood items={filterItems(burgerItem)} />
+                            </TabPanel>
+                            <TabPanel>
+                                <OrderFood items={filterItems(dessertItem)} />
+                            </TabPanel>
+                            <TabPanel>
+                                <OrderFood items={filterItems(soupItem)} />
+                            </TabPanel>
+                            <TabPanel>
+                                <OrderFood items={filterItems(saladItem)} />
+                            </TabPanel>
+                            <TabPanel>
+                                <OrderFood items={filterItems(drinkItem)} />
+                            </TabPanel>
+                        </div>
+                    </Tabs>
+                </div>
+            </Container>
         </div>
     );
 };
