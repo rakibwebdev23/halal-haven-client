@@ -11,6 +11,7 @@ import img4 from "../../../assets/category/pizza1.jpg";
 import img5 from "../../../assets/category/soup2.jpg";
 import img6 from "../../../assets/category/salad.jpg";
 import img7 from "../../../assets/category/chicken-barbecue.jpg";
+import Container from "../../../component/Container/Container";
 
 const Categories = () => {
     const categories = [
@@ -24,7 +25,8 @@ const Categories = () => {
     ];
 
     return (
-        <div className="py-10 bg-gray-50 px-4 lg:px-12">
+        <Container>
+            <div className="py-10 bg-gray-50 px-4 lg:px-12 rounded-lg">
             <h2 className="text-4xl font-bold text-center text-gray-800 mb-12 uppercase">
                 Explore Our Categories
             </h2>
@@ -68,6 +70,7 @@ const Categories = () => {
                 ))}
             </Swiper>
         </div>
+        </Container>
     );
 };
 
