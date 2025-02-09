@@ -17,7 +17,6 @@ const Banner = () => {
 
   return (
     <div className="relative w-full lg:h-[700px] min-h-screen">
-      {/* Carousel Section */}
       <Carousel
         showThumbs={false}
         infiniteLoop
@@ -38,11 +37,8 @@ const Banner = () => {
           ></div>
         ))}
       </Carousel>
-
-      {/* Overlay Content */}
       <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
-        <div className="container text-white flex flex-col lg:flex-row items-center gap-8 max-w-screen-xl">
-          {/* Text Section */}
+        <div className="container text-white flex flex-col lg:flex-row items-center gap-8 max-w-screen-xl px-4 lg:px-0">
           <div className="text-center lg:text-left lg:w-1/2 space-y-6">
             <h2 className="text-4xl lg:text-7xl font-extrabold text-orange-500">
               <span className="text-yellow-600">Welcome to</span> <br />
@@ -74,8 +70,6 @@ const Banner = () => {
               </p>
             </div>
           </div>
-
-          {/* Image Section */}
           <div className="hidden lg:block lg:w-1/2">
             <img
               src={bannerUp}

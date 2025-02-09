@@ -12,7 +12,7 @@ const MarqueSlide = () => {
                 className="overflow-hidden"
             >
                 <div className="flex gap-x-8 lg:gap-x-16 px-4">
-                    {/* Marquee Items */}
+                    {/* Items */}
                     {[
                         "Italian Pizza",
                         "Golden Saffron Sip Soup",

@@ -40,7 +40,7 @@ const Testimonial = () => {
 
   return (
     <Container>
-      <div className="mt-20 lg:mt-24 px-6 lg:px-12">
+      <div className="mt-20 lg:mt-24">
         <SectionTitle
           subTitle="Our Happy Diners"
           title="What People Are Saying About Us"
