@@ -3,40 +3,29 @@ import { FaRegStar } from "react-icons/fa";
 
 const MarqueSlide = () => {
     return (
-        <div className="lg:pt-10 pt-6 my-16">
+        <div className="py-10 my-16 bg-gradient-to-r from-slate-800 to-slate-900">
             <Marquee 
                 gradient={true} 
-                gradientWidth={200} 
-                speed={50} 
+                gradientWidth={100} 
+                speed={40} 
                 pauseOnHover 
                 className="overflow-hidden"
             >
-                <div className="flex gap-x-12 lg:gap-x-20">
+                <div className="flex gap-x-8 lg:gap-x-16 px-4">
                     {/* Marquee Items */}
-                    <div className="flex items-center uppercase text-slate-300 font-bold">
-                        <FaRegStar className="lg:text-6xl text-4xl text-slate-400 mr-4" />
-                        <span className="lg:text-7xl text-5xl">Italian Pizza</span>
-                    </div>
-                    <div className="flex items-center uppercase text-slate-300 font-bold">
-                        <FaRegStar className="lg:text-6xl text-4xl text-slate-400 mr-4" />
-                        <span className="lg:text-7xl text-5xl">Golden Saffron Sip Soup</span>
-                    </div>
-                    <div className="flex items-center uppercase text-slate-300 font-bold">
-                        <FaRegStar className="lg:text-6xl text-4xl text-slate-400 mr-4" />
-                        <span className="lg:text-7xl text-5xl">Smoky Char Burger</span>
-                    </div>
-                    <div className="flex items-center uppercase text-slate-300 font-bold">
-                        <FaRegStar className="lg:text-6xl text-4xl text-slate-400 mr-4" />
-                        <span className="lg:text-7xl text-5xl">Halal Fresh Fusion</span>
-                    </div>
-                    <div className="flex items-center uppercase text-slate-300 font-bold">
-                        <FaRegStar className="lg:text-6xl text-4xl text-slate-400 mr-4" />
-                        <span className="lg:text-7xl text-5xl">Crisp Garden Delight</span>
-                    </div>
-                    <div className="flex items-center uppercase text-slate-300 font-bold">
-                        <FaRegStar className="lg:text-6xl text-4xl text-slate-400 mr-4" />
-                        <span className="lg:text-7xl text-5xl">Golden Caramel Crisp</span>
-                    </div>
+                    {[
+                        "Italian Pizza",
+                        "Golden Saffron Sip Soup",
+                        "Smoky Char Burger",
+                        "Halal Fresh Fusion",
+                        "Crisp Garden Delight",
+                        "Golden Caramel Crisp"
+                    ].map((item, index) => (
+                        <div key={index} className="flex items-center text-white font-bold">
+                            <FaRegStar className="lg:text-5xl text-3xl text-yellow-400 mr-4" />
+                            <span className="lg:text-5xl text-3xl">{item}</span>
+                        </div>
+                    ))}
                 </div>
             </Marquee>
         </div>
