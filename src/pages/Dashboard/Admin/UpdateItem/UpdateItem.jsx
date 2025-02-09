@@ -95,7 +95,7 @@ const UpdateItem = () => {
                         <input type="file" className="file-input file-input-bordered w-full max-w-xs" {...register("image",{ required: true })} />
                     </div>
                     <div>
-                        <button className="relative px-8 py-3 border-2 border-transparent bg-gray-700 transition-all duration-300 hover:border-gray-600 text-white hover:bg-transparent hover:text-gray-700 font-bold
+                        <button className="relative px-8 py-3 border-2 border-transparent bg-orange-600 transition-all duration-300 hover:border-orange-600 text-white hover:bg-transparent hover:text-orange-600 font-bold
                          flex justify-center items-center gap-2 rounded-l-lg">
                             Update An Item <FaUtensils></FaUtensils>
                         </button>

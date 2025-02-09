@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 
 const SignUp = () => {
-    const { createUser, logOut, updateUserProfile } = useAuth();
+    const { createUser, updateUserProfile } = useAuth();
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const navigate = useNavigate();
     const axiosPublic = useAxiosPublic();
@@ -37,12 +37,7 @@ const SignUp = () => {
                                             popup: `animate__animated animate__fadeOutDown animate__faster`
                                         }
                                     });
-
-                                    logOut()
-                                        .then(() => {
-                                            navigate("/signin");
-                                        })
-                                        .catch(error => console.log(error));
+                                    navigate("/");
                                 }
                             });
                     })

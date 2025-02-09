@@ -72,7 +72,6 @@ const AdminHome = () => {
                 ))}
             </div>
 
-            {/* Charts Section */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                 {/* Bar Chart */}
                 <div className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
