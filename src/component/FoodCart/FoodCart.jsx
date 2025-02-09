@@ -55,7 +55,7 @@ const FoodCart = ({ item }) => {
         }
     }
     return (
-        <div className="card card-compact hover:bg-orange-300 bg-white w-full shadow-xl transition-all  duration-500 ease-in-out transform hover:scale-105">
+        <div className="card card-compact hover:bg-orange-300 bg-white/90 w-full shadow-xl transition-all  duration-500 ease-in-out transform hover:scale-105">
             <figure>
                 <img className="h-full w-full object-cover transition-all duration-500 ease-in-out transform hover:scale-110 hover:opacity-80"
                     src={image}
