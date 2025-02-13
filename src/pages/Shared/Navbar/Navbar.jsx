@@ -178,7 +178,7 @@ const Navbar = () => {
             <>
               <button
                 onClick={handleLogOut}
-                className="text-sm font-bold text-white bg-orange-600 px-6 py-2 rounded-lg"
+                className="text-sm font-bold text-white bg-orange-600 px-6 py-2 rounded"
               >
                 Sign Out
               </button>
@@ -191,7 +191,7 @@ const Navbar = () => {
               )}
             </>
           ) : (
-            <Link to="/signin" className="text-sm font-bold text-white bg-orange-600 px-6 py-2 rounded-lg">
+            <Link to="/signin" className="text-sm font-bold text-white bg-orange-600 px-6 py-2 rounded">
               Sign In
             </Link>
           )}
