@@ -3,6 +3,7 @@ import { IoFastFoodOutline } from "react-icons/io5";
 import { PiChefHatBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import Container from "../../../component/Container/Container";
+import img1 from "../../../assets/images/image.png";
 
 const About = () => {
   return (
@@ -10,9 +11,10 @@ const About = () => {
       <div className="py-20 mb-4 ">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           <div className="relative">
-            <div className="rounded-full overflow-hidden shadow-lg">
+            <div className="overflow-hidden shadow-lg">
               <img 
-                src="https://i.ibb.co/tQkPHKJ/about-Food.jpg" 
+                // src="https://i.ibb.co/tQkPHKJ/about-Food.jpg" 
+                src={img1}
                 alt="Halal Haven Food"
                 className="w-full h-full object-cover"
               />

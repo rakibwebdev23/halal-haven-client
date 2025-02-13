@@ -34,21 +34,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`navbar w-full fixed z-10 font-poppin mx-auto py-4 px-4 ${scrolled ? "bg-white text-orange-600" : "bg-black bg-opacity-90 text-white"}`}>
+    <div className={`navbar w-full fixed z-10 font-poppin mx-auto py-2 lg:py-4 ${scrolled ? "bg-white text-orange-600" : "bg-black bg-opacity-90 text-white"}`}>
       <Container>
         <div className="navbar-start ">
           <Link to="/" className="flex items-center gap-2">
             <img
-              className="w-8 lg:w-12 rounded-full"
+              className="w-6 lg:w-12 rounded-full"
               src={logo}
               alt="Halal Haven Logo"
             />
             <div className="flex flex-col">
-              <span className={`text-xl font-bold ${scrolled ? 'text-orange-600' : 'text-orange-500'}`}>
+              <span className={`lg:text-xl font-bold ${scrolled ? 'text-orange-600' : 'text-orange-500'}`}>
                 Halal Haven
-              </span>
-              <span className={`text-xs ${scrolled ? 'text-gray-600' : 'text-gray-300'}`}>
-                Premium Dining Experience
               </span>
             </div>
           </Link>
@@ -56,7 +53,7 @@ const Navbar = () => {
 
         {/* Mobile Navbar */}
         <div className="navbar-end lg:hidden flex items-end">
-          <button onClick={toggleMenu} className="btn btn-ghost text-white bg-orange-600">
+          <button onClick={toggleMenu} className=" px-2 py-1 rounded text-white bg-orange-600">
             {menuOpen ? (
               <MdClose className="text-2xl" />
             ) : (
