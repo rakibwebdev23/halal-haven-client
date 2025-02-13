@@ -1,41 +1,32 @@
-import { Parallax } from "react-parallax";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const MenuCover = ({ title, description, order, imgUp, imgBack }) => {
+const MenuCover = ({ title, description, order, imgBack }) => {
     return (
-        <div className="w-full">
-            <Parallax
-                bgImage={imgBack}
-                strength={-300}
-                blur={{ min: -15, max: 15 }}
+        <div className="relative min-h-screen">
+            <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{
+                    backgroundImage: `url(${imgBack})`
+                }}
             >
-                {/* Overlay */}
-                <div className=" bg-black bg-opacity-70 h-[500px] lg:h-screen flex items-center justify-center">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-white px-6 lg:px-12 lg:mt-10 max-w-7xl mx-auto">
-                        {/* Text Content */}
-                        <div className="text-center lg:text-left">
-                            <h1 className="text-4xl lg:text-6xl font-bold text-orange-500 mb-4">
-                                Halal Haven <br /> <span className="text-white">{title}</span>
-                            </h1>
-                            <p className="text-sm lg:text-base text-gray-300 mb-6 leading-relaxed">
-                                {description}
-                            </p>
-                            <Link to="/order">
-                                <button className="px-10 py-2 bg-orange-600 text-white border-2 border-transparent hover:border-orange-600 hover:bg-transparent hover:text-orange-600 transition duration-300 uppercase">
-                                    {order}
-                                </button>
-                            </Link>
-                        </div>
-                        <div className="hidden lg:block">
-                            <img
-                                src={imgUp}
-                                alt="Food Item"
-                                className="w-[500px] h-[500px] mx-auto rounded-full border-4 border-orange-500 object-cover "
-                            />
-                        </div>
-                    </div>
+                <div className="absolute inset-0 bg-black/60" />
+            </div>
+            <div className="relative min-h-screen flex items-center justify-center px-4">
+                <div className="lg:w-1/2 text-center">
+                    <h1 className="text-orange-500 lg:text-5xl text-3xl font-bold mb-6">
+                        {title}
+                    </h1>
+                    <p className="text-gray-200 mb-8">
+                        {description}
+                    </p>
+                    <Link to="/order">
+                        <button className="bg-orange-600 text-white px-10 py-3 rounded hover:bg-orange-700 transition-colors duration-300 font-semibold">
+                            {order}
+                        </button>
+                    </Link>
                 </div>
-            </Parallax>
+            </div>
         </div>
     );
 };
