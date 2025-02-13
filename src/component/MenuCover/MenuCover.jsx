@@ -3,15 +3,14 @@ import { Link } from "react-router-dom";
 
 const MenuCover = ({ title, description, order, imgUp, imgBack }) => {
     return (
-        <div className="w-full h-screen">
+        <div className="w-full">
             <Parallax
                 bgImage={imgBack}
                 strength={-300}
                 blur={{ min: -15, max: 15 }}
-                className="h-full"
             >
                 {/* Overlay */}
-                <div className="h-screen bg-black bg-opacity-70 flex items-center justify-center">
+                <div className=" bg-black bg-opacity-70 h-[500px] lg:h-screen flex items-center justify-center">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center text-white px-6 lg:px-12 lg:mt-10 max-w-7xl mx-auto">
                         {/* Text Content */}
                         <div className="text-center lg:text-left">
@@ -22,7 +21,7 @@ const MenuCover = ({ title, description, order, imgUp, imgBack }) => {
                                 {description}
                             </p>
                             <Link to="/order">
-                                <button className="px-6 py-2 bg-orange-600 text-white border-2 border-transparent hover:border-orange-600 hover:bg-transparent hover:text-orange-600 transition duration-300 uppercase">
+                                <button className="px-10 py-2 bg-orange-600 text-white border-2 border-transparent hover:border-orange-600 hover:bg-transparent hover:text-orange-600 transition duration-300 uppercase">
                                     {order}
                                 </button>
                             </Link>
@@ -31,7 +30,7 @@ const MenuCover = ({ title, description, order, imgUp, imgBack }) => {
                             <img
                                 src={imgUp}
                                 alt="Food Item"
-                                className="w-[400px] h-[400px] mx-auto rounded-full shadow-xl border-4 border-orange-500 object-cover"
+                                className="w-[500px] h-[500px] mx-auto rounded-full border-4 border-orange-500 object-cover "
                             />
                         </div>
                     </div>

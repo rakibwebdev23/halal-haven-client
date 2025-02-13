@@ -8,7 +8,7 @@ import img1 from "../../../assets/images/image.png";
 const About = () => {
   return (
     <Container>
-      <div className="py-20 mb-4 ">
+      <div className="pt-14 pb-12 mb-4 ">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           <div className="relative">
             <div className="overflow-hidden shadow-lg">
@@ -29,11 +29,11 @@ const About = () => {
               <span className="inline-block text-orange-600 font-semibold text-sm tracking-widest uppercase">
                 About Halal Haven
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mt-2">
+              <h2 className="text-2xl lg:text-5xl font-bold text-gray-900 leading-tight mt-2">
                 High-quality food for a healthier life
               </h2>
             </div>
-            <p className="text-gray-700 leading-relaxed text-lg text-center lg:text-left">
+            <p className="text-gray-700 leading-relaxed lg:text-lg text-center lg:text-left">
               "Halal Haven" is a cozy and welcoming restaurant that caters to those who value 
               high-quality, halal-certified cuisine. Our menu is a fusion of flavors from around 
               the world, offering a diverse range of dishes that meet the highest standards of 

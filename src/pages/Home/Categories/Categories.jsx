@@ -27,7 +27,7 @@ const Categories = () => {
     return (
         <Container>
             <div className="py-10 bg-gray-50 px-4 lg:px-12 rounded-lg">
-            <h2 className="text-4xl font-bold text-center text-gray-800 mb-12 uppercase">
+            <h2 className="text-2xl lg:text-4xl font-bold text-center text-gray-800 mb-12 uppercase">
                 Explore Our Categories
             </h2>
             <Swiper

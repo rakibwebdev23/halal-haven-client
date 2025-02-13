@@ -17,8 +17,8 @@ const MenuOrder = ({ menuImg }) => {
                 {/* Right section */}
                 <div className="lg:w-1/2 w-full mt-8 lg:mt-0 flex flex-col justify-between">
                     <div className="uppercase space-y-4">
-                        <p className="text-orange-600 font-semibold text-lg">Order to Halal Haven</p>
-                        <h2 className="text-3xl lg:text-5xl font-extrabold text-black leading-tight">
+                        <p className="text-orange-600 font-semibold lg:text-lg">Order to Halal Haven</p>
+                        <h2 className="text-2xl lg:text-4xl font-extrabold text-black leading-tight">
                             The Quality Food for Your Good Health
                         </h2>
                     </div>
@@ -27,7 +27,7 @@ const MenuOrder = ({ menuImg }) => {
                             "Halal Haven" is a cozy and welcoming restaurant that caters to those who value high-quality, halal-certified cuisine. Our menu is a fusion of flavors from around the world, offering a diverse range of dishes that meet the highest standards of halal preparation. From savory grilled meats to fresh salads, mouth-watering desserts, and refreshing drinks, every item on our menu is crafted with care and respect for halal traditions.
                         </p>
                         <Link to="/order">
-                            <button className="relative mt-4 px-6 lg:px-14 py-3 font-bold text-white border-2 border-transparent bg-orange-600 hover:bg-transparent hover:border-orange-600 hover:text-orange-600 transition-all duration-300 rounded-full shadow-lg">
+                            <button className="relative mt-4 px-10 lg:px-14 py-3 font-bold text-white border-2 border-transparent bg-orange-600 hover:bg-transparent hover:border-orange-600 hover:text-orange-600 transition-all duration-300 rounded-full shadow-lg">
                                 Order Now
                             </button>
                         </Link>
